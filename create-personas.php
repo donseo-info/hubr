@@ -12,36 +12,36 @@ if (($_GET['key'] ?? '') !== 'tg-parser-secret-key-change-me') {
 require_once __DIR__ . '/../../../wp-load.php';
 
 $personas = [
-    ['login'=>'elena_brovkina',   'display'=>'Елена Бровкина',      'first'=>'Елена',    'last'=>'Бровкина',   'gender'=>'f'],
-    ['login'=>'artur_id187643',   'display'=>'Артур',                'first'=>'Артур',    'last'=>'',           'gender'=>'m'],
-    ['login'=>'songo',             'display'=>'Songo',                'first'=>'Андрей',   'last'=>'',           'gender'=>'m'],
-    ['login'=>'vostok_dn',        'display'=>'Восток',               'first'=>'Восток',   'last'=>'',           'gender'=>'m'],
-    ['login'=>'imalwex',          'display'=>'Imalwex',              'first'=>'',         'last'=>'',           'gender'=>'m'],
-    ['login'=>'nastya_id1640584', 'display'=>'Настя',                'first'=>'Настя',    'last'=>'',           'gender'=>'f'],
-    ['login'=>'yuliya_id2190612', 'display'=>'Юлия',                 'first'=>'Юлия',     'last'=>'',           'gender'=>'f'],
-    ['login'=>'kai_alvrcan',      'display'=>'Kai Alvrcan',          'first'=>'Kai',      'last'=>'Alvrcan',    'gender'=>'m'],
-    ['login'=>'viktoriya_vv',     'display'=>'Виктория Викторовна',  'first'=>'Виктория', 'last'=>'Викторовна', 'gender'=>'f'],
-    ['login'=>'kyura1966',        'display'=>'kyura1966',            'first'=>'',         'last'=>'',           'gender'=>'m'],
-    ['login'=>'maks_kuznecov',    'display'=>'Макс Кузнецов',        'first'=>'Макс',     'last'=>'Кузнецов',   'gender'=>'m'],
-    ['login'=>'lex_vxw',          'display'=>'Lex Vxw',              'first'=>'Lex',      'last'=>'Vxw',        'gender'=>'m'],
-    ['login'=>'sergey_seriy',     'display'=>'Sergey Seriy',         'first'=>'Сергей',   'last'=>'Серый',      'gender'=>'m'],
-    ['login'=>'olya_id4319284',   'display'=>'Оля',                  'first'=>'Оля',      'last'=>'',           'gender'=>'f'],
-    ['login'=>'tretiakov',        'display'=>'Tretiakov',            'first'=>'',         'last'=>'Третьяков',  'gender'=>'m'],
-    ['login'=>'lida_dolgan',      'display'=>'LidaD',                'first'=>'Лида',     'last'=>'Долган',     'gender'=>'f'],
-    ['login'=>'evlyukhin_alex',   'display'=>'Александр',            'first'=>'Александр','last'=>'Евлюхин',   'gender'=>'m'],
-    ['login'=>'nutella93',        'display'=>'Nutella',              'first'=>'',         'last'=>'',           'gender'=>'f'],
-    ['login'=>'denissalabuta',    'display'=>'denissalabuta',        'first'=>'Денис',    'last'=>'Салабута',   'gender'=>'m'],
-    ['login'=>'sogreev',          'display'=>'Согреев',              'first'=>'',         'last'=>'Согреев',    'gender'=>'m'],
-    ['login'=>'katunya',          'display'=>'Katunya',              'first'=>'Катя',     'last'=>'',           'gender'=>'f'],
-    ['login'=>'agarkov_timofey',  'display'=>'Тимофей Агарков',      'first'=>'Тимофей',  'last'=>'Агарков',    'gender'=>'m'],
-    ['login'=>'allesya_alesya',   'display'=>'allesya_alesya',       'first'=>'Алеся',    'last'=>'',           'gender'=>'f'],
-    ['login'=>'oleg_tebloev',     'display'=>'Олег Теблоев',         'first'=>'Олег',     'last'=>'Теблоев',    'gender'=>'m'],
-    ['login'=>'super_coach',      'display'=>'super_coach',          'first'=>'',         'last'=>'',           'gender'=>'m'],
-    ['login'=>'albina_koryakina', 'display'=>'Albina Koryakina',     'first'=>'Альбина',  'last'=>'Корякина',   'gender'=>'f'],
-    ['login'=>'dasha_darichi',    'display'=>'Dasha',                'first'=>'Даша',     'last'=>'',           'gender'=>'f'],
-    ['login'=>'sdelano_pod',      'display'=>'Sdelano_pod',          'first'=>'',         'last'=>'',           'gender'=>'m'],
-    ['login'=>'anna_sav',         'display'=>'Anna',                 'first'=>'Анна',     'last'=>'',           'gender'=>'f'],
-    ['login'=>'varhotskyi',       'display'=>'VARHOTSKYI',           'first'=>'',         'last'=>'Варховский', 'gender'=>'m'],
+    ['login'=>'elena_brovkina',   'display'=>'Елена Бровкина',      'first'=>'Елена',    'last'=>'Бровкина',   'gender'=>'f', 'vkontakte'=>'https://vk.com/id200000520243',  'instagram'=>''],
+    ['login'=>'artur_id187643',   'display'=>'Артур',                'first'=>'Артур',    'last'=>'',           'gender'=>'m', 'vkontakte'=>'https://vk.com/id187643',         'instagram'=>''],
+    ['login'=>'songo',            'display'=>'Songo',                'first'=>'Андрей',   'last'=>'',           'gender'=>'m', 'vkontakte'=>'https://vk.com/andrey_f',         'instagram'=>''],
+    ['login'=>'vostok_dn',        'display'=>'Восток',               'first'=>'Восток',   'last'=>'',           'gender'=>'m', 'vkontakte'=>'https://vk.com/vostok_dn',        'instagram'=>''],
+    ['login'=>'imalwex',          'display'=>'Imalwex',              'first'=>'',         'last'=>'',           'gender'=>'m', 'vkontakte'=>'https://vk.com/imalwex',          'instagram'=>''],
+    ['login'=>'nastya_id1640584', 'display'=>'Настя',                'first'=>'Настя',    'last'=>'',           'gender'=>'f', 'vkontakte'=>'https://vk.com/id1640584',        'instagram'=>''],
+    ['login'=>'yuliya_id2190612', 'display'=>'Юлия',                 'first'=>'Юлия',     'last'=>'',           'gender'=>'f', 'vkontakte'=>'https://vk.com/id2190612',        'instagram'=>''],
+    ['login'=>'kai_alvrcan',      'display'=>'Kai Alvrcan',          'first'=>'Kai',      'last'=>'Alvrcan',    'gender'=>'m', 'vkontakte'=>'https://vk.com/id2167841',        'instagram'=>''],
+    ['login'=>'viktoriya_vv',     'display'=>'Виктория Викторовна',  'first'=>'Виктория', 'last'=>'Викторовна', 'gender'=>'f', 'vkontakte'=>'https://vk.com/id2352775',        'instagram'=>''],
+    ['login'=>'kyura1966',        'display'=>'kyura1966',            'first'=>'',         'last'=>'',           'gender'=>'m', 'vkontakte'=>'https://vk.com/kyura1966',        'instagram'=>''],
+    ['login'=>'maks_kuznecov',    'display'=>'Макс Кузнецов',        'first'=>'Макс',     'last'=>'Кузнецов',   'gender'=>'m', 'vkontakte'=>'https://vk.com/id3427550',        'instagram'=>''],
+    ['login'=>'lex_vxw',          'display'=>'Lex Vxw',              'first'=>'Lex',      'last'=>'Vxw',        'gender'=>'m', 'vkontakte'=>'https://vk.com/lexvxw',           'instagram'=>''],
+    ['login'=>'sergey_seriy',     'display'=>'Sergey Seriy',         'first'=>'Сергей',   'last'=>'Серый',      'gender'=>'m', 'vkontakte'=>'https://vk.com/a.k.a.seriy',      'instagram'=>''],
+    ['login'=>'olya_id4319284',   'display'=>'Оля',                  'first'=>'Оля',      'last'=>'',           'gender'=>'f', 'vkontakte'=>'https://vk.com/id4319284',        'instagram'=>''],
+    ['login'=>'tretiakov',        'display'=>'Tretiakov',            'first'=>'',         'last'=>'Третьяков',  'gender'=>'m', 'vkontakte'=>'https://vk.com/i.tretiakov',      'instagram'=>''],
+    ['login'=>'lida_dolgan',      'display'=>'LidaD',                'first'=>'Лида',     'last'=>'Долган',     'gender'=>'f', 'vkontakte'=>'',                                'instagram'=>'https://www.instagram.com/lida_dolgan/'],
+    ['login'=>'evlyukhin_alex',   'display'=>'Александр',            'first'=>'Александр','last'=>'Евлюхин',   'gender'=>'m', 'vkontakte'=>'',                                'instagram'=>'https://www.instagram.com/evlyukhin_alexandr/'],
+    ['login'=>'nutella93',        'display'=>'Nutella',              'first'=>'',         'last'=>'',           'gender'=>'f', 'vkontakte'=>'',                                'instagram'=>'https://www.instagram.com/93nutella/'],
+    ['login'=>'denissalabuta',    'display'=>'denissalabuta',        'first'=>'Денис',    'last'=>'Салабута',   'gender'=>'m', 'vkontakte'=>'',                                'instagram'=>'https://www.instagram.com/denissalabuta/'],
+    ['login'=>'sogreev',          'display'=>'Согреев',              'first'=>'',         'last'=>'Согреев',    'gender'=>'m', 'vkontakte'=>'',                                'instagram'=>'https://www.instagram.com/a.sogreev/'],
+    ['login'=>'katunya',          'display'=>'Katunya',              'first'=>'Катя',     'last'=>'',           'gender'=>'f', 'vkontakte'=>'',                                'instagram'=>'https://www.instagram.com/katya7832/'],
+    ['login'=>'agarkov_timofey',  'display'=>'Тимофей Агарков',      'first'=>'Тимофей',  'last'=>'Агарков',    'gender'=>'m', 'vkontakte'=>'',                                'instagram'=>'https://www.instagram.com/agarkov.t/'],
+    ['login'=>'allesya_alesya',   'display'=>'allesya_alesya',       'first'=>'Алеся',    'last'=>'',           'gender'=>'f', 'vkontakte'=>'',                                'instagram'=>'https://www.instagram.com/allesya_alesya_s/'],
+    ['login'=>'oleg_tebloev',     'display'=>'Олег Теблоев',         'first'=>'Олег',     'last'=>'Теблоев',    'gender'=>'m', 'vkontakte'=>'',                                'instagram'=>'https://www.instagram.com/olegtebloev5675/'],
+    ['login'=>'super_coach',      'display'=>'super_coach',          'first'=>'',         'last'=>'',           'gender'=>'m', 'vkontakte'=>'',                                'instagram'=>'https://www.instagram.com/super_coach_de/'],
+    ['login'=>'albina_koryakina', 'display'=>'Albina Koryakina',     'first'=>'Альбина',  'last'=>'Корякина',   'gender'=>'f', 'vkontakte'=>'',                                'instagram'=>'https://www.instagram.com/boni_xanna/'],
+    ['login'=>'dasha_darichi',    'display'=>'Dasha',                'first'=>'Даша',     'last'=>'',           'gender'=>'f', 'vkontakte'=>'',                                'instagram'=>'https://www.instagram.com/__dari.chi__/'],
+    ['login'=>'sdelano_pod',      'display'=>'Sdelano_pod',          'first'=>'',         'last'=>'',           'gender'=>'m', 'vkontakte'=>'',                                'instagram'=>'https://www.instagram.com/sdelano_pod_obstrelami/'],
+    ['login'=>'anna_sav',         'display'=>'Anna',                 'first'=>'Анна',     'last'=>'',           'gender'=>'f', 'vkontakte'=>'',                                'instagram'=>'https://www.instagram.com/ansavc4uk/'],
+    ['login'=>'varhotskyi',       'display'=>'VARHOTSKYI',           'first'=>'',         'last'=>'Варховский', 'gender'=>'m', 'vkontakte'=>'',                                'instagram'=>'https://www.instagram.com/varhotskyi/'],
 ];
 
 $avatarDir = __DIR__ . '/../../../wp-content/uploads/personas/';
@@ -56,8 +56,10 @@ foreach ($personas as $p) {
     // Check if user exists — update meta if already created
     $existing = get_user_by('login', $p['login']);
     if ($existing) {
-        update_user_meta($existing->ID, 'is_persona', '1');
-        update_user_meta($existing->ID, 'gender', $p['gender']);
+        update_user_meta($existing->ID, 'is_persona',  '1');
+        update_user_meta($existing->ID, 'gender',      $p['gender']);
+        if ($p['vkontakte'])  update_user_meta($existing->ID, 'vkontakte',  $p['vkontakte']);
+        if ($p['instagram'])  update_user_meta($existing->ID, 'instagram',  $p['instagram']);
         $results[] = "META_UPDATED: {$p['login']} (ID={$existing->ID})";
         continue;
     }
@@ -90,11 +92,13 @@ foreach ($personas as $p) {
         continue;
     }
 
-    // Set karma and persona flags
-    update_user_meta($userId, 'karma', $karma);
+    // Set karma, persona flags and social links
+    update_user_meta($userId, 'karma',        $karma);
     update_user_meta($userId, 'karma_history', []);
-    update_user_meta($userId, 'is_persona', '1');
-    update_user_meta($userId, 'gender', $p['gender']);
+    update_user_meta($userId, 'is_persona',   '1');
+    update_user_meta($userId, 'gender',       $p['gender']);
+    if ($p['vkontakte']) update_user_meta($userId, 'vkontakte', $p['vkontakte']);
+    if ($p['instagram']) update_user_meta($userId, 'instagram', $p['instagram']);
 
     // Download avatar from thispersondoesnotexist.com
     $avatarFile = $avatarDir . $p['login'] . '.jpg';
