@@ -63,6 +63,71 @@ class CommentsEndpoint {
             'permission_callback' => [ $this, 'check_permission' ],
         ] );
 
+        // POST /hubr/v1/posts — create new post
+        register_rest_route( self::NAMESPACE, '/posts', [
+            'methods'             => 'POST',
+            'callback'            => [ $this, 'handle_create_post' ],
+            'permission_callback' => [ $this, 'check_permission' ],
+            'args'                => [
+                'title'          => [
+                    'required'          => true,
+                    'type'              => 'string',
+                    'sanitize_callback' => 'sanitize_text_field',
+                ],
+                'content'        => [
+                    'required'          => true,
+                    'type'              => 'string',
+                    'sanitize_callback' => 'wp_kses_post',
+                ],
+                'excerpt'        => [
+                    'required'          => false,
+                    'type'              => 'string',
+                    'sanitize_callback' => 'sanitize_textarea_field',
+                    'default'           => '',
+                ],
+                'status'         => [
+                    'required'          => false,
+                    'type'              => 'string',
+                    'sanitize_callback' => 'sanitize_key',
+                    'default'           => 'publish',
+                    'enum'              => [ 'publish', 'draft', 'pending' ],
+                ],
+                'meta_title'     => [
+                    'required'          => false,
+                    'type'              => 'string',
+                    'sanitize_callback' => 'sanitize_text_field',
+                    'default'           => '',
+                ],
+                'meta_description' => [
+                    'required'          => false,
+                    'type'              => 'string',
+                    'sanitize_callback' => 'sanitize_textarea_field',
+                    'default'           => '',
+                ],
+                'thumbnail_id'   => [
+                    'required' => false,
+                    'type'     => 'integer',
+                    'default'  => 0,
+                ],
+                'image_base64'   => [
+                    'required' => false,
+                    'type'     => 'string',
+                    'default'  => '',
+                ],
+                'image_filename' => [
+                    'required'          => false,
+                    'type'              => 'string',
+                    'sanitize_callback' => 'sanitize_file_name',
+                    'default'           => 'image.jpg',
+                ],
+                'author_id'      => [
+                    'required' => false,
+                    'type'     => 'integer',
+                    'default'  => 0,
+                ],
+            ],
+        ] );
+
         // POST /hubr/v1/posts/{id}/comment — add comment or reply
         register_rest_route( self::NAMESPACE, '/posts/(?P<id>\d+)/comment', [
             'methods'             => 'POST',
@@ -278,5 +343,89 @@ class CommentsEndpoint {
             'success'    => true,
             'comment_id' => $comment_id,
         ], 201 );
+    }
+
+    public function handle_create_post( WP_REST_Request $request ): WP_REST_Response|WP_Error {
+        $author_id = (int) $request->get_param( 'author_id' )
+            ?: ( defined( 'HUBR_API_AUTHOR_ID' ) ? (int) HUBR_API_AUTHOR_ID : 1 );
+
+        $post_id = wp_insert_post( [
+            'post_title'     => $request->get_param( 'title' ),
+            'post_content'   => $request->get_param( 'content' ),
+            'post_excerpt'   => $request->get_param( 'excerpt' ),
+            'post_status'    => $request->get_param( 'status' ),
+            'post_author'    => $author_id,
+            'post_type'      => 'post',
+            'comment_status' => 'open',
+        ], true );
+
+        if ( is_wp_error( $post_id ) ) {
+            return $post_id;
+        }
+
+        // Featured image: existing attachment ID takes priority over base64 upload
+        $thumbnail_id = (int) $request->get_param( 'thumbnail_id' );
+        if ( $thumbnail_id ) {
+            set_post_thumbnail( $post_id, $thumbnail_id );
+        } else {
+            $image_base64 = $request->get_param( 'image_base64' );
+            if ( $image_base64 ) {
+                $attach_id = $this->upload_base64_image( $image_base64, $request->get_param( 'image_filename' ) );
+                if ( ! is_wp_error( $attach_id ) ) {
+                    set_post_thumbnail( $post_id, $attach_id );
+                }
+            }
+        }
+
+        // SEO meta (compatible with PublishEndpoint keys)
+        $meta_title = $request->get_param( 'meta_title' );
+        if ( $meta_title ) {
+            update_post_meta( $post_id, '_hubr_seo_title', $meta_title );
+        }
+
+        $meta_description = $request->get_param( 'meta_description' );
+        if ( $meta_description ) {
+            update_post_meta( $post_id, '_hubr_seo_description', $meta_description );
+        }
+
+        return new WP_REST_Response( [
+            'success'  => true,
+            'post_id'  => $post_id,
+            'post_url' => get_permalink( $post_id ),
+            'edit_url' => get_edit_post_link( $post_id, 'raw' ),
+        ], 201 );
+    }
+
+    private function upload_base64_image( string $base64, string $filename ): int|WP_Error {
+        $data = base64_decode( $base64, true );
+        if ( $data === false ) {
+            return new WP_Error( 'invalid_image', 'Invalid base64 data.' );
+        }
+
+        $upload = wp_upload_bits( $filename, null, $data );
+        if ( ! empty( $upload['error'] ) ) {
+            return new WP_Error( 'upload_error', $upload['error'] );
+        }
+
+        $filetype  = wp_check_filetype( $filename );
+        $attach_id = wp_insert_attachment( [
+            'post_mime_type' => $filetype['type'],
+            'post_title'     => pathinfo( $filename, PATHINFO_FILENAME ),
+            'post_content'   => '',
+            'post_status'    => 'inherit',
+        ], $upload['file'] );
+
+        if ( is_wp_error( $attach_id ) ) {
+            return $attach_id;
+        }
+
+        require_once ABSPATH . 'wp-admin/includes/image.php';
+        require_once ABSPATH . 'wp-admin/includes/media.php';
+        wp_update_attachment_metadata(
+            $attach_id,
+            wp_generate_attachment_metadata( $attach_id, $upload['file'] )
+        );
+
+        return $attach_id;
     }
 }
