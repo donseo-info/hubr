@@ -67,6 +67,7 @@ use WPShop\WPCommunity\Membership;
 use WPShop\WPCommunity\Metaboxes\MetaboxPostElements;
 use WPShop\WPCommunity\Metaboxes\MetaboxPostSettings;
 use WPShop\WPCommunity\Metaboxes\MetaboxSeo;
+use WPShop\WPCommunity\Metaboxes\CategorySeo;
 use WPShop\WPCommunity\MobileMenu;
 use WPShop\WPCommunity\Orders;
 use WPShop\WPCommunity\OrderStatus;
@@ -441,6 +442,9 @@ return function ( $config ) {
         },
         MetaboxSeo::class          => function () {
             return new MetaboxSeo();
+        },
+        CategorySeo::class         => function () {
+            return new CategorySeo();
         },
         Layout::class              => function ( $c ) {
             return new Layout(

@@ -46,6 +46,7 @@ use WPShop\WPCommunity\Membership;
 use WPShop\WPCommunity\Metaboxes\MetaboxPostElements;
 use WPShop\WPCommunity\Metaboxes\MetaboxPostSettings;
 use WPShop\WPCommunity\Metaboxes\MetaboxSeo;
+use WPShop\WPCommunity\Metaboxes\CategorySeo;
 use WPShop\WPCommunity\Features\MicroData;
 use WPShop\WPCommunity\MobileMenu;
 use WPShop\WPCommunity\Orders;
@@ -154,6 +155,7 @@ add_action( 'wpcommunity/theme/init', function () {
     theme_container()->get( CommentsEndpoint::class )->init();
 
     theme_container()->get( MetaboxSeo::class )->init();
+    theme_container()->get( CategorySeo::class )->init();
 
     if ( is_admin() ) {
         theme_container()->get( MetaboxPostElements::class )->init();
