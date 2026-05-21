@@ -1,0 +1,30 @@
+/**
+ * Wpshop Customizer Control Sortable Checkboxes
+ *
+ * @version     1.0.0
+ *
+ * Changelog
+ *
+ * 1.0.0    2019-01-27      Init
+ */
+
+.wpshop-customize-sortable-checkboxes-list {
+
+}
+
+.wpshop-customize-sortable-checkboxes-handle {
+    float: right;
+    cursor: move;
+    color: #bdbdbd;
+    transition: all .3s;
+}
+
+.wpshop-customize-sortable-checkboxes-handle:hover {
+    color: #000;
+}
+
+.wpshop-customize-sortable-checkboxes-list li {
+    padding: 7px;
+    border: 1px solid #e5e5e5;
+    background: #fafafa;
+}

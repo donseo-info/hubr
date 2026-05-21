@@ -1,0 +1,4254 @@
+# Copyright (C) 2020 Automattic
+# This file is distributed under the GNU General Public License v2 or later.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: WPCommunity\n"
+"POT-Creation-Date: 2025-09-30 12:24+0300\n"
+"PO-Revision-Date: 2021-03-13 23:03+0300\n"
+"Last-Translator: \n"
+"Language-Team: WPShop.ru <support@wpshop.biz>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Generator: Poedit 3.5\n"
+"X-Domain: wpcommunity\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx;esc_html__;esc_html_e;esc_html_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: vendor/wpshop\n"
+"X-Poedit-SearchPathExcluded-0: languages\n"
+"X-Poedit-SearchPathExcluded-1: assets\n"
+"X-Poedit-SearchPathExcluded-2: node_modules\n"
+"X-Poedit-SearchPathExcluded-3: vendor/wpshop/wpshop-settings/template-parts\n"
+
+#: 404.php:23
+msgid "Not found"
+msgstr ""
+
+#: 404.php:25
+msgid "It looks like this page has been deleted or never existed."
+msgstr ""
+
+#: author.php:92 src/Admin/Settings.php:420 src/Features/RelatedProducts.php:72
+#: src/Layout/Profile/ProfileTabs.php:50
+#: template-parts/admin/settings/tab-karma.php:22
+msgid "Karma"
+msgstr ""
+
+#: author.php:101
+msgid "day on site"
+msgid_plural "days on site"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: author.php:108
+msgid "subscriber"
+msgid_plural "subscribers"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: author.php:171
+msgid "Nothing written yet"
+msgstr ""
+
+#: comments.php:32
+msgid "Show Comments"
+msgstr ""
+
+#: functions.php:63 src/Actions/Admin/SetupAssistantAction.php:82
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:64 functions.php:161
+#: src/Actions/Admin/SetupAssistantAction.php:83
+#: src/Actions/Admin/SetupAssistantAction.php:174
+msgid "Sidebar Bottom"
+msgstr ""
+
+#: functions.php:152
+msgid "Sidebar Top"
+msgstr ""
+
+#: functions.php:154 functions.php:163 functions.php:174
+msgid "Add widgets here."
+msgstr ""
+
+#: functions.php:172
+msgid "Sidebar 2"
+msgstr ""
+
+#: functions.php:211 src/AssetProvider.php:81
+msgid "Saved"
+msgstr ""
+
+#: functions.php:212 src/AssetProvider.php:82 src/AssetProvider.php:136
+msgid "Are you sure?"
+msgstr ""
+
+#: header.php:28
+msgid "Skip to content"
+msgstr ""
+
+#: inc/class-walker-comment.php:50 src/Widgets/CommentWalker.php:45
+msgid "author"
+msgstr ""
+
+#: inc/class-walker-comment.php:56 inc/class-walker-comment.php:58
+msgid "Restore"
+msgstr ""
+
+#: inc/class-walker-comment.php:56 inc/class-walker-comment.php:58
+#: template-parts/publish/publish-form.php:143
+msgid "Delete"
+msgstr ""
+
+#: inc/class-walker-comment.php:79 src/Widgets/CommentWalker.php:53
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: inc/template-tags.php:30
+#, php-format
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr ""
+
+#: inc/template-tags.php:46
+#, php-format
+msgctxt "post author"
+msgid "by %s"
+msgstr ""
+
+#: inc/template-tags.php:63
+msgid ", "
+msgstr ""
+
+#: inc/template-tags.php:66
+#, php-format
+msgid "Posted in %1$s"
+msgstr ""
+
+#: inc/template-tags.php:70
+msgctxt "list item separator"
+msgid ", "
+msgstr ""
+
+#: inc/template-tags.php:73
+#, php-format
+msgid "Tagged %1$s"
+msgstr ""
+
+#: inc/template-tags.php:83
+#, php-format
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#: inc/template-tags.php:100
+#, php-format
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+
+#: search.php:50
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: search.php:52
+msgid "Nothing found"
+msgstr ""
+
+#: search.php:99 template-parts/content-none.php:37
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+#: searchform.php:10
+msgctxt "wpcommunity"
+msgid "Search for:"
+msgstr ""
+
+#: searchform.php:11
+msgid "Search…"
+msgstr ""
+
+#: src/Achievements.php:29 src/Metaboxes/MetaboxAchievements.php:37
+msgid "Achievements"
+msgstr ""
+
+#: src/Actions/Admin/SetupAssistantAction.php:91
+#, php-format
+msgid "Unable to create empty menu in the area \"%s\""
+msgstr ""
+
+#: src/Actions/Admin/SetupAssistantAction.php:96
+#, php-format
+msgid "The menu in the \"%s\" area already exists"
+msgstr ""
+
+#: src/Actions/Admin/SetupAssistantAction.php:102
+#, php-format
+msgid "Unable to create menu in the area \"%s\": %s"
+msgstr ""
+
+#: src/Actions/Admin/SetupAssistantAction.php:130
+#, php-format
+msgid "The menu in the \"%s\" area was successfully created"
+msgstr ""
+
+#: src/Actions/Admin/SetupAssistantAction.php:173
+#, php-format
+msgid "The menu of area \"%s\" not found"
+msgstr ""
+
+#: src/Actions/Admin/SetupAssistantAction.php:237
+#, php-format
+msgid "Unable to handle widget \"%s\" creation"
+msgstr ""
+
+#: src/Actions/Admin/SetupAssistantAction.php:246
+#, php-format
+msgid "The widget \"%s\" does not exist"
+msgstr ""
+
+#: src/Actions/Admin/SetupAssistantAction.php:251
+#, php-format
+msgid "Skip creation of disabled widget \"%s\""
+msgstr ""
+
+#: src/Actions/Admin/SetupAssistantAction.php:256
+#, php-format
+msgid "The widget \"%s\" already exists"
+msgstr ""
+
+#: src/Actions/Admin/SetupAssistantAction.php:266
+#, php-format
+msgid "Skip creation of widget \"%s\": %s"
+msgstr ""
+
+#: src/Actions/Admin/SetupAssistantAction.php:274
+#, php-format
+msgid "The widget \"%s\" was successfully created"
+msgstr ""
+
+#: src/Actions/Admin/SetupAssistantAction.php:276
+#, php-format
+msgid "Something went wrong while creating widget \"%s\""
+msgstr ""
+
+#: src/Actions/Admin/SetupAssistantAction.php:293
+msgid "You are not allowed to perform this action"
+msgstr ""
+
+#: src/Actions/AuthAction.php:80 src/Actions/BookmarkAction.php:40
+#: src/Actions/CommentAction.php:61 src/Actions/FollowAction.php:45
+#: src/Actions/FollowAction.php:92 src/Actions/InviteAction.php:40
+#: src/Actions/ProfileAction.php:31 src/Actions/PublishAction.php:58
+#: src/Actions/PublishAction.php:206 src/Vote.php:400
+msgid "Your session has expired. Please refresh the page and try again."
+msgstr ""
+
+#: src/Actions/AuthAction.php:84 src/Actions/CommentAction.php:69
+#: src/Actions/InviteAction.php:48 src/Actions/ProfileAction.php:39
+#: src/Actions/PublishAction.php:66 src/Actions/PublishAction.php:214
+msgid "Empty data"
+msgstr ""
+
+#: src/Actions/AuthAction.php:105
+msgid "Please make sure you fill correct email and password."
+msgstr ""
+
+#: src/Actions/AuthAction.php:111 src/Actions/AuthAction.php:116
+msgid "Incorrect email or password"
+msgstr ""
+
+#: src/Actions/AuthAction.php:147
+msgid "Please enter a username."
+msgstr ""
+
+#: src/Actions/AuthAction.php:149
+msgid "This username is invalid because it uses illegal characters."
+msgstr ""
+
+#: src/Actions/AuthAction.php:151
+msgid "This username is already registered."
+msgstr ""
+
+#: src/Actions/AuthAction.php:156
+msgid "Sorry, that username is not allowed."
+msgstr ""
+
+#: src/Actions/AuthAction.php:162 src/Actions/AuthAction.php:257
+msgid "Please type your email address."
+msgstr ""
+
+#: src/Actions/AuthAction.php:164 src/Actions/AuthAction.php:167
+#: src/Actions/AuthAction.php:259 src/Actions/AuthAction.php:262
+msgid "The email address isn&#8217;t correct."
+msgstr ""
+
+#: src/Actions/AuthAction.php:187
+msgid "Invalid reCAPTCHA response."
+msgstr ""
+
+#: src/Actions/AuthAction.php:232 src/Actions/SubscribeAction.php:95
+msgid "Couldn&#8217;t register you, please contact the administrator!"
+msgstr ""
+
+#: src/Actions/AuthAction.php:277
+msgid "We can&#8217;t generate reset link. Please contact to administrator."
+msgstr ""
+
+#: src/Actions/AuthAction.php:293
+msgid "Someone has requested a password reset for the following account:"
+msgstr ""
+
+#: src/Actions/AuthAction.php:295
+#, php-format
+msgid "Site Name: %s"
+msgstr ""
+
+#: src/Actions/AuthAction.php:297
+#, php-format
+msgid "Username: %s"
+msgstr ""
+
+#: src/Actions/AuthAction.php:298
+msgid "If this was a mistake, ignore this email and nothing will happen."
+msgstr ""
+
+#: src/Actions/AuthAction.php:299
+msgid "To reset your password, visit the following address:"
+msgstr ""
+
+#: src/Actions/AuthAction.php:305
+msgid "Reset key"
+msgstr ""
+
+#: src/Actions/AuthAction.php:317
+#, php-format
+msgid "This password reset request originated from the IP address %s."
+msgstr ""
+
+#: src/Actions/AuthAction.php:323 template-parts/profile/auth-form.php:62
+msgid "Password Recovery"
+msgstr ""
+
+#: src/Actions/AuthAction.php:333
+msgid "The email could not be sent. Your site may not be correctly configured to send emails. Get support for resetting your password."
+msgstr ""
+
+#: src/Actions/AuthAction.php:338
+msgid "A password reset link was emailed."
+msgstr ""
+
+#: src/Actions/AuthAction.php:376
+msgid "Wrong action"
+msgstr ""
+
+#: src/Actions/AvatarAction.php:32 src/Actions/AvatarAction.php:56
+msgid "You are not allowed for avatar upload"
+msgstr ""
+
+#: src/Actions/AvatarAction.php:52
+msgid "Unable to upload avatar"
+msgstr ""
+
+#: src/Actions/AvatarAction.php:60
+msgid "Avatar for "
+msgstr ""
+
+#: src/Actions/AvatarAction.php:78
+msgid "Avatar successfully updated"
+msgstr ""
+
+#: src/Actions/AvatarAction.php:93
+msgid "Unable to decode attachment data"
+msgstr ""
+
+#: src/Actions/AvatarAction.php:101
+msgid "Unable to save attachment file"
+msgstr ""
+
+#: src/Actions/AvatarAction.php:107
+msgid "Unable to save invalid image file"
+msgstr ""
+
+#: src/Actions/BookmarkAction.php:44 template-parts/components/bookmark.php:9
+msgid "Sign in to add to bookmarks"
+msgstr ""
+
+#: src/Actions/BookmarkAction.php:48 src/Vote.php:408
+msgid "Wrong data"
+msgstr ""
+
+#: src/Actions/BookmarkAction.php:53 src/Features/Karma.php:158
+msgid "Post not found"
+msgstr ""
+
+#: src/Actions/CommentAction.php:65 src/Actions/FollowAction.php:49
+#: src/Actions/FollowAction.php:88 src/Actions/InviteAction.php:44
+#: src/Actions/ProfileAction.php:35 src/Actions/PublishAction.php:62
+#: src/Actions/PublishAction.php:210
+#: template-parts/elements/follow-button.php:32
+msgid "Login required"
+msgstr ""
+
+#: src/Actions/CommentAction.php:78 src/Features/Karma.php:165
+msgid "Comment not found"
+msgstr ""
+
+#: src/Actions/FollowAction.php:60 src/Actions/FollowAction.php:103
+msgid "Invalid subscription type"
+msgstr ""
+
+#: src/Actions/FollowAction.php:64 src/Actions/FollowAction.php:107
+msgid "Validation errors"
+msgstr ""
+
+#: src/Actions/FollowAction.php:72
+msgid "You are already subscribed"
+msgstr ""
+
+#: src/Actions/FollowAction.php:76
+msgid "Successfully subscribed"
+msgstr ""
+
+#: src/Actions/FollowAction.php:79
+msgid "Something went wrong while storing subscription"
+msgstr ""
+
+#: src/Actions/FollowAction.php:115
+msgid "Successfully unsubscribed"
+msgstr ""
+
+#: src/Actions/FollowAction.php:118
+msgid "Something went wrong while removing subscription"
+msgstr ""
+
+#: src/Actions/InviteAction.php:63
+msgid "Invite successfully applied"
+msgstr ""
+
+#: src/Actions/OrderAction.php:102
+msgid "Invalid order key."
+msgstr ""
+
+#: src/Actions/OrderAction.php:107
+msgid "This order not payable."
+msgstr ""
+
+#: src/Actions/OrderAction.php:114
+msgid "Invalid provider."
+msgstr ""
+
+#: src/Actions/OrderAction.php:118
+msgid "The provider is currently disabled."
+msgstr ""
+
+#: src/Actions/OrderAction.php:143
+msgid "Invalid redirect url."
+msgstr ""
+
+#: src/Actions/OrderAction.php:159
+msgid "Unable to cancel recurring payment without order"
+msgstr ""
+
+#: src/Actions/OrderAction.php:163
+msgid "Unable to cancel recurring payment with wrong order data"
+msgstr ""
+
+#: src/Actions/OrderAction.php:169
+msgid "Unable to cancel recurring payment with wrong user data"
+msgstr ""
+
+#: src/Actions/OrderAction.php:172
+msgid "by user"
+msgstr ""
+
+#: src/Actions/OrderAction.php:174
+msgid "The automatic debit has been successfully canceled."
+msgstr ""
+
+#: src/Actions/OrderAction.php:189 src/Actions/OrderAction.php:264
+msgid "Forbidden"
+msgstr ""
+
+#: src/Actions/OrderAction.php:207
+msgid "A refund cannot be created on this order."
+msgstr ""
+
+#: src/Actions/OrderAction.php:212
+msgid "Payment provider not found to creating the return."
+msgstr ""
+
+#: src/Actions/OrderAction.php:254
+msgid "You are not allowed to change order status"
+msgstr ""
+
+#: src/Actions/ProfileAction.php:45 src/Auth.php:61
+msgid "User not found"
+msgstr ""
+
+#: src/Actions/ProfileAction.php:49
+msgid "Profile successfully updated."
+msgstr ""
+
+#: src/Actions/ProfileAction.php:72
+msgid "Unable to set this login"
+msgstr ""
+
+#: src/Actions/ProfileAction.php:76
+msgid "Unable to set this nickname"
+msgstr ""
+
+#: src/Actions/ProfileAction.php:80
+msgid "Unable to change login"
+msgstr ""
+
+#: src/Actions/ProfileAction.php:84
+msgid "You have changed your login. You need to sign in to your account again."
+msgstr ""
+
+#: src/Actions/ProfileAction.php:109
+msgid "Please enter a new password and confirm it."
+msgstr ""
+
+#: src/Actions/ProfileAction.php:112
+msgid "New password and confirmation do not match."
+msgstr ""
+
+#: src/Actions/ProfileAction.php:122
+msgid "You have changed password. You need to sign in to your account again."
+msgstr ""
+
+#: src/Actions/PublishAction.php:75
+msgid "Empty title"
+msgstr ""
+
+#: src/Actions/PublishAction.php:183
+msgid "The post are successfully saved."
+msgstr ""
+
+#: src/Actions/PublishAction.php:232
+msgid "The post was successfully deleted."
+msgstr ""
+
+#: src/Actions/PublishAction.php:235
+msgid "Couldn't delete the post."
+msgstr ""
+
+#: src/Actions/SubscribeAction.php:67 src/Actions/SubscribeAction.php:104
+msgid "Enter your email or log in."
+msgstr ""
+
+#: src/Actions/SubscribeAction.php:126 src/Orders.php:449
+msgid "Unable to find subscription plan"
+msgstr ""
+
+#: src/Actions/SubscribeAction.php:130 src/Orders.php:453
+msgid "Unable to use this subscription plan"
+msgstr ""
+
+#: src/Admin/MenuPage.php:16 src/Admin/MenuPage.php:17
+msgid "WPCommunity Settings"
+msgstr ""
+
+#: src/Admin/MenuPage.php:32 src/Admin/MenuPage.php:33
+msgid "Advertisement"
+msgstr ""
+
+#: src/Admin/Notices.php:43 vendor/wpshop/core/src/Core.php:46
+msgid "Attention!"
+msgstr ""
+
+#: src/Admin/Notices.php:47 src/Admin/Notices.php:74
+#, php-format
+msgid "To activate the theme you need to enter the license key on <a href=\"%s\">this page</a>."
+msgstr ""
+
+#: src/Admin/Notices.php:89
+msgid "Briefly unavailable for scheduled maintenance. Check back in a minute."
+msgstr ""
+
+#: src/Admin/Notices.php:90
+msgid "Maintenance"
+msgstr ""
+
+#: src/Admin/Settings.php:273
+msgid "By clicking \"Pay\" you agree to the processing of [privacy_policy_link]personal data[/privacy_policy_link] and accept [offer_link]he offer[/offer_link]."
+msgstr ""
+
+#: src/Admin/Settings.php:275
+msgid "Save for recurring autopayments."
+msgstr ""
+
+#: src/Admin/Settings.php:277
+msgid "Russian and some foreign cards, YooMoneu, QIWI and bank clients are accepted for payment."
+msgstr ""
+
+#: src/Admin/Settings.php:278 src/Admin/Settings.php:279
+msgid "Bank cards of the Russian Federation, foreign bank cards (MasterCard, Union Pay), SBP, QIWI, Yandex Pay."
+msgstr ""
+
+#: src/Admin/Settings.php:281
+#: template-parts/admin/settings/tab-settings.php:107
+msgid "Related Posts"
+msgstr ""
+
+#: src/Admin/Settings.php:283 vendor/wpshop/core/src/Breadcrumbs.php:99
+msgid "Home"
+msgstr ""
+
+#: src/Admin/Settings.php:285
+msgid "By clicking the \"Register\" button, You accept the rules and [privacy_policy_link]privacy policy[/privacy_policy_link]."
+msgstr ""
+
+#: src/Admin/Settings.php:287
+msgctxt "heredoc"
+msgid "New post"
+msgstr ""
+
+#: src/Admin/Settings.php:288
+msgctxt "heredoc"
+msgid "Author"
+msgstr ""
+
+#: src/Admin/Settings.php:415
+#: vendor/wpshop/wpshop-settings/src/AbstractSettings.php:211
+#: vendor/wpshop/wpshop-settings/src/AbstractSettings.php:215
+msgid "Dashboard"
+msgstr ""
+
+#: src/Admin/Settings.php:416 src/ThemeOptions.php:113
+#: template-parts/admin/settings/tab-pages.php:31
+#: vendor/wpshop/core/src/Sitemap.php:95
+msgid "Pages"
+msgstr ""
+
+#: src/Admin/Settings.php:417
+msgid "Payment"
+msgstr ""
+
+#: src/Admin/Settings.php:418 template-parts/admin/settings.php:79
+#: template-parts/admin/settings/tab-pro.php:27
+#: template-parts/admin/settings/tab-settings.php:24
+#: vendor/wpshop/core/src/ThemeSettings.php:68
+msgid "Settings"
+msgstr ""
+
+#: src/Admin/Settings.php:419 src/Social.php:76
+#: vendor/wpshop/core/src/Social.php:39
+msgid "Telegram"
+msgstr ""
+
+#: src/Admin/Settings.php:421
+msgid "Pro Account"
+msgstr ""
+
+#: src/Admin/Settings.php:422
+msgid "Advanced"
+msgstr ""
+
+#: src/Admin/Settings.php:473
+msgid "Generate Key"
+msgstr ""
+
+#: src/Admin/SetupAssistant.php:25
+#: template-parts/admin/setup-assistant/pages.php:25
+msgid "Create Pages"
+msgstr ""
+
+#: src/Admin/SetupAssistant.php:29
+#: template-parts/admin/setup-assistant/menu.php:72
+msgid "Create Menu"
+msgstr ""
+
+#: src/Admin/SetupAssistant.php:33
+#: template-parts/admin/setup-assistant/widgets.php:72
+msgid "Create Widgets"
+msgstr ""
+
+#: src/Admin/SetupAssistant.php:45
+msgid "Activation"
+msgstr ""
+
+#: src/AssetProvider.php:137
+msgid "Please, select order status"
+msgstr ""
+
+#: src/AssetProvider.php:169 src/Post.php:74
+#: template-parts/profile/tab-posts.php:52
+msgid "edit"
+msgstr ""
+
+#: src/AssetProvider.php:170
+msgctxt "page"
+msgid "created"
+msgstr ""
+
+#: src/AssetProvider.php:204 template-parts/admin/settings/tab-social.php:43
+#: template-parts/admin/settings/tab-social.php:60
+#: template-parts/profile/tab-about.php:173
+msgid "show more"
+msgstr ""
+
+#: src/Auth.php:65
+msgid "The old password is incorrect."
+msgstr ""
+
+#: src/Auth.php:87
+msgid "Please type your password."
+msgstr ""
+
+#: src/Auth.php:89 template-parts/profile/auth-form.php:141
+msgid "Password must be at least 8 characters long."
+msgstr ""
+
+#: src/Auth.php:95
+msgid "The password cannot be a space or all spaces."
+msgstr ""
+
+#: src/Auth.php:105
+msgid "Reset data is invalid. Please request a new link."
+msgstr ""
+
+#: src/Auth.php:111
+msgid "Your password reset link has expired. Please request a new link."
+msgstr ""
+
+#: src/Auth.php:113
+msgid "Your password reset link appears to be invalid. Please request a new link."
+msgstr ""
+
+#: src/Comments.php:47
+msgid "The comment was deleted."
+msgstr ""
+
+#: src/Comments.php:56
+msgid "Unknown"
+msgstr ""
+
+#: src/Context.php:70
+msgid "Unable to get proper data from empty serialized string"
+msgstr ""
+
+#: src/Context.php:80
+msgid "Unable to get proper data from serialized string"
+msgstr ""
+
+#: src/Context.php:86
+msgid "Unable to get proper data"
+msgstr ""
+
+#: src/Core/TableOfContentsBuilder.php:187
+#: src/Customizer/CustomizerHelper.php:501
+#: vendor/wpshop/core/src/TableOfContents.php:167
+msgid "Contents"
+msgstr ""
+
+#: src/Cron.php:83 src/Telegram/TelegramCron.php:29
+msgid "Every 5 minutes"
+msgstr ""
+
+#: src/Customizer/Control/ColorSchemeControl.php:98
+msgid "Dark Theme"
+msgstr ""
+
+#: src/Customizer/Control/ColorSchemeControl.php:101
+#: src/Customizer/Customizer.php:307
+msgid "Light Theme"
+msgstr ""
+
+#: src/Customizer/Control/ColorSchemeControl.php:151
+#: template-parts/profile/auth-form.php:220
+#: template-parts/profile/tab-about.php:15
+#: vendor/wpshop/core/src/Customizer/Control/Typography.php:84
+msgid "Reset"
+msgstr ""
+
+#: src/Customizer/Control/ColorSchemeControl.php:162
+msgid "Generate Scheme"
+msgstr ""
+
+#: src/Customizer/Control/ColorSchemeControl.php:167
+msgid "Bezier interpolation"
+msgstr ""
+
+#: src/Customizer/Control/ColorSchemeControl.php:171
+msgid "Correct Lightness"
+msgstr ""
+
+#: src/Customizer/Control/ColorSchemeControl.php:173
+msgid "Choose base colors for generation"
+msgstr ""
+
+#: src/Customizer/Control/ColorSchemeControl.php:178
+msgid "Generate Palette"
+msgstr ""
+
+#: src/Customizer/Control/DevicesTrait.php:15
+msgctxt "customize control"
+msgid "Desktop"
+msgstr ""
+
+#: src/Customizer/Control/DevicesTrait.php:19
+msgctxt "customize control"
+msgid "Tablet"
+msgstr ""
+
+#: src/Customizer/Control/DevicesTrait.php:23
+msgctxt "customize control"
+msgid "Mobile"
+msgstr ""
+
+#: src/Customizer/Control/DevicesTrait.php:38
+#: src/Customizer/Control/DevicesTrait.php:39
+msgctxt "customize control"
+msgid "Reset"
+msgstr ""
+
+#: src/Customizer/Control/SocialProfilesControl.php:29
+#: src/Customizer/Control/SortableCheckboxesControl.php:70
+msgctxt "customize control"
+msgid "Selector"
+msgstr ""
+
+#: src/Customizer/Control/SortableCheckboxesControl.php:79
+msgid "configure"
+msgstr ""
+
+#: src/Customizer/CssBuilder.php:114
+#, php-format
+msgid "Trying to build css with not registered media expression '%s'"
+msgstr ""
+
+#: src/Customizer/Customizer.php:271
+msgid "Structure"
+msgstr ""
+
+#: src/Customizer/Customizer.php:284
+msgid "Modules"
+msgstr ""
+
+#: src/Customizer/Customizer.php:297
+msgid "Color Scheme"
+msgstr ""
+
+#: src/Customizer/Customizer.php:319
+msgid "Logo Dark"
+msgstr ""
+
+#: src/Customizer/Customizer.php:320
+msgid "Logotype for dark theme"
+msgstr ""
+
+#: src/Customizer/Customizer.php:328 src/Customizer/Customizer.php:333
+msgid "Select logo"
+msgstr ""
+
+#: src/Customizer/Customizer.php:329
+msgid "Change logo"
+msgstr ""
+
+#: src/Customizer/Customizer.php:330 template-parts/admin/advertisement.php:102
+#: vendor/wpshop/core/src/Customizer/Control/PageConstructor.php:143
+msgid "Remove"
+msgstr ""
+
+#: src/Customizer/Customizer.php:331 src/Metaboxes/MetaboxMembership.php:33
+#: src/Metaboxes/MetaboxMembership.php:46
+#: vendor/wpshop/wpshop-settings/src/SettingsRenderer.php:534
+msgid "Default"
+msgstr ""
+
+#: src/Customizer/Customizer.php:332
+msgid "No logo selected"
+msgstr ""
+
+#: src/Customizer/Customizer.php:334
+msgid "Choose logo"
+msgstr ""
+
+#: src/Customizer/Customizer.php:340
+msgid "Homepage h1"
+msgstr ""
+
+#: src/Customizer/Customizer.php:341
+msgid "The title to be displayed on the home page if no site name is set"
+msgstr ""
+
+#: src/Customizer/Customizer.php:361
+msgid "Dark"
+msgstr ""
+
+#: src/Customizer/Customizer.php:362
+msgid "Light"
+msgstr ""
+
+#: src/Customizer/Customizer.php:376
+msgid "White Background"
+msgstr ""
+
+#: src/Customizer/Customizer.php:386 src/Customizer/ThemeColors.php:137
+msgid "Body Background"
+msgstr ""
+
+#: src/Customizer/Customizer.php:396
+msgid "Background Light"
+msgstr ""
+
+#: src/Customizer/Customizer.php:462
+msgid "Logo Max Width"
+msgstr ""
+
+#: src/Customizer/Customizer.php:471
+msgid "Logo Max Height"
+msgstr ""
+
+#: src/Customizer/Customizer.php:500
+msgid "Header"
+msgstr ""
+
+#: src/Customizer/Customizer.php:501
+msgid "Here you can customize the appearance of site header"
+msgstr ""
+
+#: src/Customizer/Customizer.php:511 src/Customizer/Customizer.php:728
+#: src/Customizer/Customizer.php:868
+msgid "Header Elements"
+msgstr ""
+
+#: src/Customizer/Customizer.php:517
+msgid "Site Branding"
+msgstr ""
+
+#: src/Customizer/Customizer.php:522
+msgid "Main Navigation"
+msgstr ""
+
+#: src/Customizer/Customizer.php:525
+msgid "Social"
+msgstr ""
+
+#: src/Customizer/Customizer.php:528 src/Customizer/Customizer.php:977
+#: src/Features/Breadcrumbs.php:46
+msgid "Search"
+msgstr ""
+
+#: src/Customizer/Customizer.php:531 src/Customizer/Customizer.php:563
+msgid "HTML 1"
+msgstr ""
+
+#: src/Customizer/Customizer.php:534 src/Customizer/Customizer.php:571
+msgid "HTML 2"
+msgstr ""
+
+#: src/Customizer/Customizer.php:543
+msgid "Site Branding Elements"
+msgstr ""
+
+#: src/Customizer/Customizer.php:549
+msgid "Logo"
+msgstr ""
+
+#: src/Customizer/Customizer.php:552
+#: template-parts/admin/settings/tab-settings.php:115
+#: template-parts/publish/publish-form.php:155
+#: vendor/wpshop/core/src/Customizer/Control/PageConstructor.php:173
+#: vendor/wpshop/core/src/Customizer/Control/PageConstructor.php:259
+msgid "Title"
+msgstr ""
+
+#: src/Customizer/Customizer.php:555 src/Metaboxes/MetaboxAchievements.php:73
+#: src/Metaboxes/MetaboxInvite.php:106
+#: template-parts/admin/settings/tab-payment.php:70
+#: template-parts/admin/settings/tab-payment.php:138
+#: template-parts/admin/settings/tab-payment.php:184
+#: template-parts/admin/settings/tab-payment.php:335
+msgid "Description"
+msgstr ""
+
+#: src/Customizer/Customizer.php:587
+msgid "Footer"
+msgstr ""
+
+#: src/Customizer/Customizer.php:588
+msgid "Here you can customize the appearance of site footer"
+msgstr ""
+
+#: src/Customizer/Customizer.php:598 src/Customizer/Customizer.php:767
+#: src/Customizer/Customizer.php:907
+msgid "Footer Elements"
+msgstr ""
+
+#: src/Customizer/Customizer.php:604 src/Customizer/Customizer.php:609
+#: src/Customizer/Customizer.php:614 src/Customizer/Customizer.php:619
+#: src/Customizer/Customizer.php:624 src/Customizer/Customizer.php:629
+#, php-format
+msgid "Block %d"
+msgstr ""
+
+#: src/Customizer/Customizer.php:639
+msgid "Block 1 HTML / Widgets"
+msgstr ""
+
+#: src/Customizer/Customizer.php:647 src/Customizer/Customizer.php:655
+#: src/Customizer/Customizer.php:663 src/Customizer/Customizer.php:671
+#: src/Customizer/Customizer.php:679
+#, php-format
+msgid "Content of Block %d"
+msgstr ""
+
+#: src/Customizer/Customizer.php:695 src/Features/Advertisement.php:265
+#: template-parts/admin/settings/tab-settings.php:65
+msgid "Post"
+msgstr ""
+
+#: src/Customizer/Customizer.php:696
+msgid "Here you can customize the appearance of the post content"
+msgstr ""
+
+#: src/Customizer/Customizer.php:706 src/Customizer/Customizer.php:850
+msgid "Content Elements"
+msgstr ""
+
+#: src/Customizer/Customizer.php:712 src/Customizer/Customizer.php:859
+#: template-parts/publish/publish-form.php:159
+msgid "Excerpt"
+msgstr ""
+
+#: src/Customizer/Customizer.php:715 src/Customizer/Customizer.php:856
+msgid "Image"
+msgstr ""
+
+#: src/Customizer/Customizer.php:718
+msgid "Content"
+msgstr ""
+
+#: src/Customizer/Customizer.php:736 src/Customizer/Customizer.php:876
+msgid "Author"
+msgstr ""
+
+#: src/Customizer/Customizer.php:739 src/Customizer/Customizer.php:879
+msgid "Date"
+msgstr ""
+
+#: src/Customizer/Customizer.php:742 src/Customizer/Customizer.php:882
+msgid "Category"
+msgstr ""
+
+#: src/Customizer/Customizer.php:751 src/Customizer/Customizer.php:891
+msgid "Header Right Block"
+msgstr ""
+
+#: src/Customizer/Customizer.php:758 src/Customizer/Customizer.php:898
+msgid "Vote"
+msgstr ""
+
+#: src/Customizer/Customizer.php:775 src/Customizer/Customizer.php:915
+#: src/Layout/Profile/ProfileTabs.php:80 src/Widgets/CommentWidget.php:19
+#: src/Widgets/CommentWidget.php:62 src/Widgets/CommentWidget.php:84
+#: template-parts/admin/settings/tab-settings.php:143
+msgid "Comments"
+msgstr ""
+
+#: src/Customizer/Customizer.php:778 src/Customizer/Customizer.php:918
+msgid "Views"
+msgstr ""
+
+#: src/Customizer/Customizer.php:781 src/Customizer/Customizer.php:921
+msgid "Bookmark"
+msgstr ""
+
+#: src/Customizer/Customizer.php:784 src/Customizer/Customizer.php:924
+#: src/Features/RelatedProducts.php:58
+#: template-parts/publish/publish-form.php:198 template-subs.php:89
+msgid "Tags"
+msgstr ""
+
+#: src/Customizer/Customizer.php:793 src/Customizer/Customizer.php:933
+msgid "Footer Right Block"
+msgstr ""
+
+#: src/Customizer/Customizer.php:800 src/Customizer/Customizer.php:940
+#: src/Metaboxes/MetaboxMembership.php:31
+#: src/Metaboxes/MetaboxMembership.php:44
+#: template-parts/publish/publish-form.php:338
+msgid "Access"
+msgstr ""
+
+#: src/Customizer/Customizer.php:808 src/Metaboxes/MetaboxPostElements.php:53
+msgid "Hide Sidebar 1"
+msgstr ""
+
+#: src/Customizer/Customizer.php:815 src/Metaboxes/MetaboxPostElements.php:57
+msgid "Hide Sidebar 2"
+msgstr ""
+
+#: src/Customizer/Customizer.php:839
+msgid "Post Card"
+msgstr ""
+
+#: src/Customizer/Customizer.php:840
+msgid "Here you can customize the appearance of the post card content"
+msgstr ""
+
+#: src/Customizer/Customizer.php:958
+msgid "Excerpt Length"
+msgstr ""
+
+#: src/Customizer/Customizer.php:959
+msgid "The option specifies the number of words to be displayed in the excerpt"
+msgstr ""
+
+#: src/Customizer/Customizer.php:978
+msgid "Here you can customize the appearance of the search page"
+msgstr ""
+
+#: src/Customizer/Customizer.php:987
+msgid "Show Form"
+msgstr ""
+
+#: src/Customizer/Customizer.php:994
+msgid "Show Form on Mobile"
+msgstr ""
+
+#: src/Customizer/Customizer.php:1010
+msgid "Social Profiles"
+msgstr ""
+
+#: src/Customizer/Customizer.php:1020 src/Customizer/Customizer.php:1083
+msgid "Show Label"
+msgstr ""
+
+#: src/Customizer/Customizer.php:1029 src/Customizer/Customizer.php:1092
+msgid "Use Original Colors"
+msgstr ""
+
+#: src/Customizer/Customizer.php:1047
+msgid "Profiles"
+msgstr ""
+
+#: src/Customizer/Customizer.php:1064
+msgid "Social Share"
+msgstr ""
+
+#: src/Customizer/Customizer.php:1074
+msgid "Show Counters"
+msgstr ""
+
+#: src/Customizer/Customizer.php:1107
+msgid "Services"
+msgstr ""
+
+#: src/Customizer/Customizer.php:1124
+msgid "Scroll to Top Button"
+msgstr ""
+
+#: src/Customizer/Customizer.php:1134
+msgid "Enable Scroll to Top"
+msgstr ""
+
+#: src/Customizer/Customizer.php:1144
+msgid "Enable on Mobile"
+msgstr ""
+
+#: src/Customizer/Customizer.php:1154
+msgid "Use Custom Colors"
+msgstr ""
+
+#: src/Customizer/Customizer.php:1162
+msgid "Background Color"
+msgstr ""
+
+#: src/Customizer/Customizer.php:1174
+msgid "Arrow Color"
+msgstr ""
+
+#: src/Customizer/Customizer.php:1188
+msgid "Button Width"
+msgstr ""
+
+#: src/Customizer/Customizer.php:1189 src/Customizer/Customizer.php:1202
+#: src/Customizer/Customizer.php:1230 src/Customizer/Customizer.php:1243
+msgid "The value will be applied in pixels"
+msgstr ""
+
+#: src/Customizer/Customizer.php:1201
+msgid "Button Height"
+msgstr ""
+
+#: src/Customizer/Customizer.php:1212
+msgid "Position"
+msgstr ""
+
+#: src/Customizer/Customizer.php:1218
+msgid "Left"
+msgstr ""
+
+#: src/Customizer/Customizer.php:1219
+msgid "Right"
+msgstr ""
+
+#: src/Customizer/Customizer.php:1229
+msgid "Indentation in x-axis"
+msgstr ""
+
+#: src/Customizer/Customizer.php:1242
+msgid "Indentation in y-axis"
+msgstr ""
+
+#: src/Customizer/Customizer.php:1253
+msgid "Icon"
+msgstr ""
+
+#: src/Customizer/Customizer.php:1256 src/Customizer/Customizer.php:1269
+msgid "Custom Icon"
+msgstr ""
+
+#: src/Customizer/Customizer.php:1270
+msgid "You can specify <img> or <svg> content"
+msgstr ""
+
+#: src/Customizer/Customizer.php:1290
+msgid "Table of Contents"
+msgstr ""
+
+#: src/Customizer/Customizer.php:1300
+msgid "Enable on Posts"
+msgstr ""
+
+#: src/Customizer/Customizer.php:1310
+msgid "Enable on Pages"
+msgstr ""
+
+#: src/Customizer/Customizer.php:1320
+msgid "Default Opened"
+msgstr ""
+
+#: src/Customizer/Customizer.php:1330
+msgid "Wrap in Noindex"
+msgstr ""
+
+#: src/Customizer/Customizer.php:1340
+msgid "Output the Content at the Beginning of the Post"
+msgstr ""
+
+#: src/Customizer/Customizer.php:1348
+msgid "Contents Header"
+msgstr ""
+
+#: src/Customizer/ThemeColors.php:101
+msgid "Primary Color"
+msgstr ""
+
+#: src/Customizer/ThemeColors.php:102
+msgid "The primary color with which your site will be associated"
+msgstr ""
+
+#: src/Customizer/ThemeColors.php:110
+msgid "Secondary Color"
+msgstr ""
+
+#: src/Customizer/ThemeColors.php:111
+msgid "The secondary color with which your site will be associated"
+msgstr ""
+
+#: src/Customizer/ThemeColors.php:119
+msgid "Button Primary Color"
+msgstr ""
+
+#: src/Customizer/ThemeColors.php:120
+msgid "Primary color of standard buttons"
+msgstr ""
+
+#: src/Customizer/ThemeColors.php:128
+msgid "Box Background"
+msgstr ""
+
+#: src/Customizer/ThemeColors.php:129
+msgid "Background color of structural boxes"
+msgstr ""
+
+#: src/Customizer/ThemeColors.php:138
+msgid "Background color of the document body"
+msgstr ""
+
+#: src/Customizer/ThemeColors.php:146
+msgid "Body Background Additional"
+msgstr ""
+
+#: src/Customizer/ThemeColors.php:147
+msgid "Additional background color of the document body"
+msgstr ""
+
+#: src/Customizer/ThemeColors.php:155
+msgid "Link Color"
+msgstr ""
+
+#: src/Customizer/ThemeColors.php:156
+msgid "Color of links on site pages"
+msgstr ""
+
+#: src/Customizer/ThemeColors.php:164
+msgid "Link Color on Hover"
+msgstr ""
+
+#: src/Customizer/ThemeColors.php:165
+msgid "Color of links when hovering"
+msgstr ""
+
+#: src/Customizer/ThemeColors.php:173
+msgid "Link Color on Hover Light"
+msgstr ""
+
+#: src/Customizer/ThemeColors.php:174
+msgid "Color of links when hovering over light text"
+msgstr ""
+
+#: src/Customizer/ThemeColors.php:182
+msgid "Text Color"
+msgstr ""
+
+#: src/Customizer/ThemeColors.php:183
+msgid "Text color on site pages"
+msgstr ""
+
+#: src/Customizer/ThemeColors.php:191
+msgid "Text Color Light"
+msgstr ""
+
+#: src/Customizer/ThemeColors.php:192
+msgid "Additional text color on site pages"
+msgstr ""
+
+#: src/Customizer/ThemeColors.php:200
+msgid "Text Color Lighter"
+msgstr ""
+
+#: src/Customizer/ThemeColors.php:201
+msgid "One more additional color on site pages"
+msgstr ""
+
+#: src/Customizer/ThemeColors.php:213
+msgid "WPCommunity"
+msgstr ""
+
+#: src/Customizer/ThemeColors.php:266
+msgid "Preset 1"
+msgstr ""
+
+#: src/Customizer/ThemeColors.php:319
+msgid "Preset 2"
+msgstr ""
+
+#: src/DefaultHooks.php:144 vendor/wpshop/core/src/Helper.php:120
+msgid "m."
+msgstr ""
+
+#: src/DefaultHooks.php:147 src/DefaultHooks.php:150
+#: vendor/wpshop/core/src/Helper.php:123 vendor/wpshop/core/src/Helper.php:126
+msgid "k."
+msgstr ""
+
+#: src/DefaultPages.php:25 src/ThemeOptions.php:118 template-account.php:9
+#: template-parts/profile/auth-form.php:47
+#: template-parts/profile/profile.php:16
+msgid "Profile"
+msgstr ""
+
+#: src/DefaultPages.php:30
+msgid "Join Us"
+msgstr ""
+
+#: src/DefaultPages.php:39 src/ThemeOptions.php:128
+#: src/Widgets/MenuWidget.php:34
+msgid "About"
+msgstr ""
+
+#: src/DefaultPages.php:43 src/ThemeOptions.php:133
+#: src/Widgets/MenuWidget.php:45 template-parts/admin/advertisement.php:118
+msgid "Popular"
+msgstr ""
+
+#: src/DefaultPages.php:48 src/ThemeOptions.php:138
+#: src/Widgets/MenuWidget.php:50 template-parts/admin/advertisement.php:123
+msgid "Subscriptions"
+msgstr ""
+
+#: src/DefaultPages.php:53 src/ThemeOptions.php:143
+#: src/Widgets/MenuWidget.php:55 template-top.php:48
+msgid "Top"
+msgstr ""
+
+#: src/DefaultPages.php:58 src/ThemeOptions.php:148
+#: src/Widgets/MenuWidget.php:60 template-parts/admin/advertisement.php:128
+msgid "Bookmarks"
+msgstr ""
+
+#: src/DefaultPages.php:63
+msgid "Add Post"
+msgstr ""
+
+#: src/DefaultPages.php:68 src/ThemeOptions.php:158
+msgid "Order"
+msgstr ""
+
+#: src/DefaultPages.php:73
+msgid "Offer"
+msgstr ""
+
+#: src/DefaultPages.php:77
+msgid "Payment and Refund"
+msgstr ""
+
+#: src/DefaultPages.php:81
+msgid "Contacts"
+msgstr ""
+
+#: src/Features/Advertisement.php:266
+msgid "Feed"
+msgstr ""
+
+#: src/Features/Advertisement.php:267
+msgid "Post Category"
+msgstr ""
+
+#: src/Features/Advertisement.php:268
+msgid "Post Tag"
+msgstr ""
+
+#: src/Features/Breadcrumbs.php:44
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: src/Features/Breadcrumbs.php:45
+#, php-format
+msgid "Archive for %s"
+msgstr ""
+
+#: src/Features/Breadcrumbs.php:47
+msgid "Not Found"
+msgstr ""
+
+#: src/Features/Breadcrumbs.php:87
+#, php-format
+msgid "Profile of %s"
+msgstr ""
+
+#: src/Features/Karma.php:29
+msgid "Publish a post"
+msgstr ""
+
+#: src/Features/Karma.php:36
+msgid "Remove a post from publication"
+msgstr ""
+
+#: src/Features/Karma.php:45
+msgid "Comment on a post"
+msgstr ""
+
+#: src/Features/Karma.php:52
+msgid "Delete comment"
+msgstr ""
+
+#: src/Features/Karma.php:59
+msgid "Spam comment"
+msgstr ""
+
+#: src/Features/Karma.php:66
+msgid "Unspam comment"
+msgstr ""
+
+#: src/Features/Karma.php:75
+msgid "Vote for a post"
+msgstr ""
+
+#: src/Features/Karma.php:82
+msgid "Vote for a comment"
+msgstr ""
+
+#: src/Features/Karma.php:215
+msgid "Cant change karma, because direction not found."
+msgstr ""
+
+#: src/Features/Karma.php:219
+msgid "Cant change karma, because action not found."
+msgstr ""
+
+#: src/Features/MenuIcons.php:42
+msgid "Set Icon"
+msgstr ""
+
+#: src/Features/RelatedProducts.php:59
+msgid "Categories"
+msgstr ""
+
+#: src/Features/RelatedProducts.php:60
+msgid "Tags & Categories"
+msgstr ""
+
+#: src/Features/RelatedProducts.php:69
+msgid "Date (new earlier)"
+msgstr ""
+
+#: src/Features/RelatedProducts.php:70
+msgid "Date (old earlier)"
+msgstr ""
+
+#: src/Features/RelatedProducts.php:71
+msgid "Random"
+msgstr ""
+
+#: src/Features/Shortcodes.php:72
+msgid "Your name"
+msgstr ""
+
+#: src/Features/Shortcodes.php:78
+msgid "Your e-mail"
+msgstr ""
+
+#: src/Features/Shortcodes.php:83
+msgid "Your subject"
+msgstr ""
+
+#: src/Features/Shortcodes.php:88
+msgid "Message"
+msgstr ""
+
+#: src/Features/ViewsCounter.php:254
+msgid "Unable to update the number of views of the wrong post"
+msgstr ""
+
+#: src/FrontendPublish.php:23
+msgctxt "post_formats"
+msgid "Post"
+msgstr ""
+
+#: src/FrontendPublish.php:24
+msgctxt "post_formats"
+msgid "Question"
+msgstr ""
+
+#: src/FrontendPublish.php:25
+msgctxt "post_formats"
+msgid "Video"
+msgstr ""
+
+#: src/FrontendPublish.php:26
+msgctxt "post_formats"
+msgid "Link"
+msgstr ""
+
+#: src/FrontendPublish.php:27
+msgctxt "post_formats"
+msgid "Event"
+msgstr ""
+
+#: src/FrontendPublish.php:88
+msgid "You are trying to edit not a post."
+msgstr ""
+
+#: src/FrontendPublish.php:90 src/FrontendPublish.php:116
+msgid "You don't have access to this post."
+msgstr ""
+
+#: src/FrontendPublish.php:92 src/FrontendPublish.php:118
+msgid "Incorrect post type"
+msgstr ""
+
+#: src/FrontendPublish.php:94 src/FrontendPublish.php:120
+msgid "Incorrect post status"
+msgstr ""
+
+#: src/FrontendPublish.php:96 src/FrontendPublish.php:122
+msgid "It's not a correct post."
+msgstr ""
+
+#: src/FrontendPublish.php:98
+msgid "Edit time is expired."
+msgstr ""
+
+#: src/FrontendPublish.php:114
+msgid "You are trying to delete not a post."
+msgstr ""
+
+#: src/FrontendPublish.php:275
+msgid "Click the image to edit or update"
+msgstr ""
+
+#: src/Helper.php:49
+msgid "now"
+msgstr ""
+
+#: src/Helper.php:53
+msgid "minute"
+msgid_plural "minutes"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: src/Helper.php:57
+msgid "hour"
+msgid_plural "hours"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: src/Helper.php:61 src/PaidSubscriptions.php:173
+msgid "day"
+msgid_plural "days"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: src/Helper.php:65 src/PaidSubscriptions.php:170
+msgid "month"
+msgid_plural "months"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: src/Helper.php:69 src/PaidSubscriptions.php:167
+msgid "year"
+msgid_plural "years"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: src/Invite.php:90
+msgid "Invite is empty"
+msgstr ""
+
+#: src/Invite.php:97
+msgid "Invite not found"
+msgstr ""
+
+#: src/Invite.php:102
+msgid "Invite expired"
+msgstr ""
+
+#: src/Invite.php:107
+msgid "Sorry, invite is no longer working"
+msgstr ""
+
+#: src/Invite.php:125
+msgid "This invite only for newbie"
+msgstr ""
+
+#: src/Invite.php:130
+msgid "Invite already activated"
+msgstr ""
+
+#: src/Invite.php:192 src/Metaboxes/MetaboxInvite.php:39
+#: template-parts/profile/auth-form.php:145
+#: template-parts/profile/tab-subscription.php:76
+msgid "Invite"
+msgstr ""
+
+#: src/Invite.php:227 src/Metaboxes/MetaboxInvite.php:82
+msgid "Bonus days"
+msgstr ""
+
+#: src/Invite.php:228 src/Metaboxes/MetaboxInvite.php:75
+msgid "Only for new users"
+msgstr ""
+
+#: src/Invite.php:229 src/Metaboxes/MetaboxInvite.php:98
+msgid "Limit"
+msgstr ""
+
+#: src/Invite.php:230 src/User.php:275
+msgid "Expire"
+msgstr ""
+
+#: src/Layout/Profile/ProfileTabs.php:32 src/Metaboxes/MetaboxOrder.php:80
+#: src/Orders.php:316
+msgid "Subscription"
+msgstr ""
+
+#: src/Layout/Profile/ProfileTabs.php:41
+msgctxt "about me"
+msgid "About"
+msgstr ""
+
+#: src/Layout/Profile/ProfileTabs.php:70 template-subs.php:58
+msgid "Posts"
+msgstr ""
+
+#: src/Mail.php:20
+msgid "Subscription on "
+msgstr ""
+
+#: src/Mail.php:36
+msgid "Notification of pending payment."
+msgstr ""
+
+#: src/Mail.php:52
+msgid "Registration on"
+msgstr ""
+
+#: src/Mail.php:77
+msgctxt "mail order"
+msgid "You placed order"
+msgstr ""
+
+#: src/Mail.php:79
+msgctxt "mail order"
+msgid "at"
+msgstr ""
+
+#: src/Mail.php:105
+#, php-format
+msgctxt "mail order"
+msgid "Your order %s is complete"
+msgstr ""
+
+#: src/Membership.php:99 template-parts/no-access.php:8
+#: template-parts/no-bookmarks.php:8
+msgid "Sorry, you dont have permission to read this post."
+msgstr ""
+
+#: src/Metaboxes/MetaboxInvite.php:77
+msgid "Invite can activate only new users"
+msgstr ""
+
+#: src/Metaboxes/MetaboxInvite.php:85
+msgid "Bonus days after activate invite"
+msgstr ""
+
+#: src/Metaboxes/MetaboxInvite.php:90
+#: template-parts/profile/tab-subscription.php:40
+msgid "Expired"
+msgstr ""
+
+#: src/Metaboxes/MetaboxInvite.php:93
+msgid "Expired date included"
+msgstr ""
+
+#: src/Metaboxes/MetaboxInvite.php:101
+msgid "Usage limit"
+msgstr ""
+
+#: src/Metaboxes/MetaboxInvite.php:109
+msgid "Only for admins"
+msgstr ""
+
+#: src/Metaboxes/MetaboxInvite.php:114
+msgid "Activations"
+msgstr ""
+
+#: src/Metaboxes/MetaboxInvite.php:137
+msgid "(user removed)"
+msgstr ""
+
+#: src/Metaboxes/MetaboxMembership.php:17 src/User.php:269
+msgid "Membership"
+msgstr ""
+
+#: src/Metaboxes/MetaboxMembership.php:34
+#: src/Metaboxes/MetaboxMembership.php:47
+#: template-parts/admin/settings/tab-settings.php:67
+#: template-parts/admin/settings/tab-settings.php:73
+#: template-parts/elements/post-card/footer/access.php:18
+#: template-parts/post-card/meta-access.php:18
+#: template-parts/post-footer.php:51 template-parts/post/meta-access.php:18
+#: template-parts/publish/publish-form.php:341
+msgid "Public"
+msgstr ""
+
+#: src/Metaboxes/MetaboxMembership.php:35
+#: src/Metaboxes/MetaboxMembership.php:48
+#: template-parts/admin/settings/tab-settings.php:66
+#: template-parts/admin/settings/tab-settings.php:72
+#: template-parts/elements/post-card/footer/access.php:24
+#: template-parts/elements/post-card/footer/access.php:28
+#: template-parts/post-card/meta-access.php:24
+#: template-parts/post-card/meta-access.php:28
+#: template-parts/post-footer.php:57 template-parts/post-footer.php:61
+#: template-parts/post/meta-access.php:24
+#: template-parts/post/meta-access.php:28
+#: template-parts/publish/publish-form.php:340
+msgid "Private"
+msgstr ""
+
+#: src/Metaboxes/MetaboxOrder.php:25
+msgid "Order info"
+msgstr ""
+
+#: src/Metaboxes/MetaboxOrder.php:69
+msgid "General"
+msgstr ""
+
+#: src/Metaboxes/MetaboxOrder.php:88
+msgid "Price"
+msgstr ""
+
+#: src/Metaboxes/MetaboxOrder.php:100
+msgid "Payment provider"
+msgstr ""
+
+#: src/Metaboxes/MetaboxOrder.php:103 src/Metaboxes/MetaboxOrder.php:150
+#: src/Metaboxes/MetaboxOrder.php:226
+msgid "<i>(null)</i>"
+msgstr ""
+
+#: src/Metaboxes/MetaboxOrder.php:110
+msgid "Make a Refund"
+msgstr ""
+
+#: src/Metaboxes/MetaboxOrder.php:117
+msgid "Order Status"
+msgstr ""
+
+#: src/Metaboxes/MetaboxOrder.php:122
+msgid "-- select status --"
+msgstr ""
+
+#: src/Metaboxes/MetaboxOrder.php:131
+msgid "Change Status"
+msgstr ""
+
+#: src/Metaboxes/MetaboxOrder.php:133
+msgid "There will be no automatic refund and unsubscribe when the status changes. This all needs to be handled manually."
+msgstr ""
+
+#: src/Metaboxes/MetaboxOrder.php:142
+#: template-parts/admin/settings/tab-payment.php:64
+msgid "Recurring Payment"
+msgstr ""
+
+#: src/Metaboxes/MetaboxOrder.php:147
+msgid "Next Date"
+msgstr ""
+
+#: src/Metaboxes/MetaboxOrder.php:163
+msgid "order"
+msgstr ""
+
+#: src/Metaboxes/MetaboxOrder.php:171
+msgid "Recurring History"
+msgstr ""
+
+#: src/Metaboxes/MetaboxOrder.php:211
+msgid "Parent Order"
+msgstr ""
+
+#: src/Metaboxes/MetaboxOrder.php:219
+msgid "Status Hostory"
+msgstr ""
+
+#: src/Metaboxes/MetaboxPostElements.php:29
+msgid "Post Elements"
+msgstr ""
+
+#: src/Metaboxes/MetaboxPostElements.php:38
+msgid "Page Elements"
+msgstr ""
+
+#: src/Metaboxes/MetaboxPostElements.php:69
+msgid "Page Header"
+msgstr ""
+
+#: src/Metaboxes/MetaboxPostElements.php:103
+msgid "Related Post Ids"
+msgstr ""
+
+#: src/Metaboxes/MetaboxPostElements.php:109
+msgid "Source Link"
+msgstr ""
+
+#: src/Metaboxes/MetaboxPostElements.php:111
+msgid "If you need to provide a link to an external site as a source, fill in this field"
+msgstr ""
+
+#: src/Metaboxes/MetaboxPostSettings.php:31
+msgid "Post Format"
+msgstr ""
+
+#: src/Metaboxes/MetaboxPostSettings.php:82
+#: template-parts/publish/publish-form.php:186
+msgid "Format"
+msgstr ""
+
+#: src/OrderStatus.php:71
+#, php-format
+msgid "Unable to change order status from \"%s\" to \"%s\""
+msgstr ""
+
+#: src/OrderStatus.php:109
+msgid "Not logged in users cannot change order statuses"
+msgstr ""
+
+#: src/OrderStatus.php:119
+msgid "Only existing users can change order statuses"
+msgstr ""
+
+#: src/OrderStatus.php:150
+msgctxt "order status"
+msgid "Pending"
+msgstr ""
+
+#: src/OrderStatus.php:151
+msgctxt "order status"
+msgid "Completed"
+msgstr ""
+
+#: src/OrderStatus.php:152
+msgctxt "order status"
+msgid "Failed"
+msgstr ""
+
+#: src/OrderStatus.php:153
+msgctxt "order status"
+msgid "Canceled"
+msgstr ""
+
+#: src/OrderStatus.php:154
+msgctxt "order status"
+msgid "Refunded"
+msgstr ""
+
+#: src/Orders.php:88
+msgctxt "orders"
+msgid "Order"
+msgstr ""
+
+#: src/Orders.php:89
+msgctxt "orders"
+msgid "Price"
+msgstr ""
+
+#: src/Orders.php:91
+msgctxt "orders"
+msgid "Status"
+msgstr ""
+
+#: src/Orders.php:92
+msgctxt "orders"
+msgid "Date"
+msgstr ""
+
+#: src/Orders.php:115
+msgid "Recurring Order"
+msgstr ""
+
+#: src/Orders.php:116
+msgid "Parent Order:"
+msgstr ""
+
+#: src/Orders.php:123
+msgid "Recurring payment day"
+msgstr ""
+
+#: src/Orders.php:138
+msgctxt "orders"
+msgid "at"
+msgstr ""
+
+#: src/Orders.php:152
+msgid "Not order"
+msgstr ""
+
+#: src/Orders.php:371
+msgid ", user "
+msgstr ""
+
+#: src/Orders.php:571
+msgid "Orders"
+msgstr ""
+
+#: src/PaidSubscriptions.php:44
+msgctxt "subscription"
+msgid "1 day"
+msgstr ""
+
+#: src/PaidSubscriptions.php:49
+msgctxt "subscription"
+msgid "1 month"
+msgstr ""
+
+#: src/PaidSubscriptions.php:54
+msgctxt "subscription"
+msgid "1 year"
+msgstr ""
+
+#: src/PaymentProviders.php:31
+msgid "Prodamus"
+msgstr ""
+
+#: src/PaymentProviders/Prodamus.php:203 src/PaymentProviders/RoboKassa.php:360
+#: src/PaymentProviders/YooKassa.php:413
+#, php-format
+msgid "Payment <%s>"
+msgstr ""
+
+#: src/PaymentProviders/RecurringPayments.php:133
+#, php-format
+msgid "The next subscription debit is scheduled for %s"
+msgstr ""
+
+#: src/PaymentProviders/RecurringPayments.php:151
+#, php-format
+msgid "Subscription canceled: %s"
+msgstr ""
+
+#: src/PaymentProviders/RecurringPayments.php:151
+msgid "Subscription canceled"
+msgstr ""
+
+#: src/PaymentProviders/RecurringPayments.php:262
+#, php-format
+msgid "Unable to create recurring order: %s"
+msgstr ""
+
+#: src/PaymentProviders/RecurringPayments.php:275
+#, php-format
+msgid "Child order successfully created [%d]"
+msgstr ""
+
+#: src/PaymentProviders/RecurringPayments.php:294
+msgid "Unable to find payment provider."
+msgstr ""
+
+#: src/PaymentProviders/RecurringPayments.php:300
+msgid "Unable to create a payment for disabled provider."
+msgstr ""
+
+#: src/PaymentProviders/RecurringPayments.php:306
+msgid "Unable to create a recurring payment due to disabling reasons."
+msgstr ""
+
+#: src/PaymentProviders/RecurringPayments.php:322
+msgid "by user on payment method side"
+msgstr ""
+
+#: src/PaymentProviders/RecurringPayments.php:327
+msgid "error limit is exceeded"
+msgstr ""
+
+#: src/PaymentProviders/RecurringPayments.php:333
+msgid "Successful scheduled debit"
+msgstr ""
+
+#: src/PaymentProviders/RoboKassa.php:233
+#, php-format
+msgid "Unable to parse response from RoboKassa: %s"
+msgstr ""
+
+#: src/PaymentProviders/RoboKassa.php:294
+msgid "Response body: "
+msgstr ""
+
+#: src/PaymentProviders/YooKassa.php:309
+msgid "Unable to create recurring payment. Subscription was canceled by customer."
+msgstr ""
+
+#: src/PaymentProviders/YooKassa.php:317
+msgid "The recurring payment has not been created."
+msgstr ""
+
+#: src/PaymentProviders/YooKassa.php:528
+msgid "Unable to create refund without payment id"
+msgstr ""
+
+#: src/PaymentProviders/YooKassa.php:543
+msgid "Unable to create refund"
+msgstr ""
+
+#: src/Post.php:16
+msgctxt "post format"
+msgid "Post"
+msgstr ""
+
+#: src/Post.php:17
+msgctxt "post format"
+msgid "Question"
+msgstr ""
+
+#: src/Post.php:18
+msgctxt "post format"
+msgid "Video"
+msgstr ""
+
+#: src/Post.php:19
+msgctxt "post format"
+msgid "Link"
+msgstr ""
+
+#: src/Post.php:20
+msgctxt "post format"
+msgid "Event"
+msgstr ""
+
+#: src/Post.php:57
+msgid "Source"
+msgstr ""
+
+#: src/Social.php:38 vendor/wpshop/core/src/Social.php:37
+msgid "Facebook"
+msgstr ""
+
+#: src/Social.php:48 vendor/wpshop/core/src/Social.php:69
+msgid "WhatsApp"
+msgstr ""
+
+#: src/Social.php:58 vendor/wpshop/core/src/Social.php:74
+msgid "Instagram"
+msgstr ""
+
+#: src/Social.php:66
+msgid "VK"
+msgstr ""
+
+#: src/Social.php:86 vendor/wpshop/core/src/Social.php:73
+msgid "YouTube"
+msgstr ""
+
+#: src/Social.php:96
+msgid "X"
+msgstr ""
+
+#: src/Social.php:110 vendor/wpshop/core/src/Social.php:67
+msgid "Skype"
+msgstr ""
+
+#: src/Social.php:120 vendor/wpshop/core/src/Social.php:68
+msgid "Viber"
+msgstr ""
+
+#: src/Social.php:129
+msgid "OK"
+msgstr ""
+
+#: src/Social.php:139 vendor/wpshop/core/src/Social.php:43
+msgid "LinkedIn"
+msgstr ""
+
+#: src/Social.php:147 vendor/wpshop/core/src/Social.php:75
+msgid "TikTok"
+msgstr ""
+
+#: src/Social.php:155 vendor/wpshop/core/src/Social.php:41
+msgid "LiveJournal"
+msgstr ""
+
+#: src/Social.php:167 vendor/wpshop/core/src/Social.php:42
+msgid "My@Mail.Ru"
+msgstr ""
+
+#: src/Social.php:177 vendor/wpshop/core/src/Social.php:45
+msgid "Tumblr"
+msgstr ""
+
+#: src/Social.php:187 vendor/wpshop/core/src/Social.php:46
+msgid "Surfingbird"
+msgstr ""
+
+#: src/Social.php:197 vendor/wpshop/core/src/Social.php:47
+msgid "Pinterest"
+msgstr ""
+
+#: src/Social.php:207 vendor/wpshop/core/src/Social.php:48
+msgid "Reddit"
+msgstr ""
+
+#: src/Social.php:217 vendor/wpshop/core/src/Social.php:49
+msgid "Buffer"
+msgstr ""
+
+#: src/Social.php:224 vendor/wpshop/core/src/Social.php:50
+msgid "StumbleUpon"
+msgstr ""
+
+#: src/Social.php:234 vendor/wpshop/core/src/Social.php:52
+msgid "Evernote"
+msgstr ""
+
+#: src/Social.php:244 vendor/wpshop/core/src/Social.php:53
+msgid "Delicious"
+msgstr ""
+
+#: src/Social.php:254 vendor/wpshop/core/src/Social.php:54
+msgid "Blogger"
+msgstr ""
+
+#: src/Social.php:264 vendor/wpshop/core/src/Social.php:55
+msgid "LiveInternet"
+msgstr ""
+
+#: src/Social.php:270 vendor/wpshop/core/src/Social.php:57
+msgid "Digg"
+msgstr ""
+
+#: src/Social.php:280 vendor/wpshop/core/src/Social.php:58
+msgid "Instapaper"
+msgstr ""
+
+#: src/Social.php:286 vendor/wpshop/core/src/Social.php:59
+msgid "WordPress"
+msgstr ""
+
+#: src/Social.php:296 vendor/wpshop/core/src/Social.php:60
+msgid "Baidu"
+msgstr ""
+
+#: src/Social.php:302 vendor/wpshop/core/src/Social.php:61
+msgid "RenRen"
+msgstr ""
+
+#: src/Social.php:308 vendor/wpshop/core/src/Social.php:62
+msgid "Weibo"
+msgstr ""
+
+#: src/Social.php:314 vendor/wpshop/core/src/Social.php:63
+msgid "Pocket"
+msgstr ""
+
+#: src/Social.php:322 vendor/wpshop/core/src/Social.php:64
+msgid "Xing"
+msgstr ""
+
+#: src/Social.php:330 vendor/wpshop/core/src/Social.php:66
+msgid "SMS"
+msgstr ""
+
+#: src/Social.php:340 vendor/wpshop/core/src/Social.php:70
+msgid "LINE"
+msgstr ""
+
+#: src/Social.php:351
+msgid "GitHub"
+msgstr ""
+
+#: src/Social.php:361
+msgid "Discord"
+msgstr ""
+
+#: src/Social.php:371
+msgid "RUTUBE"
+msgstr ""
+
+#: src/Social.php:379
+msgid "Yappy"
+msgstr ""
+
+#: src/Social.php:389
+msgid "Pikabu"
+msgstr ""
+
+#: src/Social.php:399
+msgid "Dzen"
+msgstr ""
+
+#: src/Social.php:410
+msgid "DonationAlerts"
+msgstr ""
+
+#: src/Telegram/Commands/StartCommand.php:55
+msgid "Hi"
+msgstr ""
+
+#: src/Telegram/Commands/StartCommand.php:56
+msgid "I'm a bot in a closed community"
+msgstr ""
+
+#: src/Telegram/Commands/StartCommand.php:58
+msgid "My tasks include various notifications and messages about replies, rewards and subscription expiration."
+msgstr ""
+
+#: src/Telegram/Commands/StartCommand.php:66
+#, php-format
+msgid "Invite for %s"
+msgstr ""
+
+#: src/Telegram/Commands/StartCommand.php:80
+msgid "Your account is already linked to"
+msgstr ""
+
+#: src/Telegram/Commands/StartCommand.php:84
+msgid "Your account has been successfully linked."
+msgstr ""
+
+#: src/Telegram/Commands/StartCommand.php:87
+msgid "Your invitation:"
+msgstr ""
+
+#: src/Telegram/Commands/StartCommand.php:90
+#, php-format
+msgid "For me to be able to do all this I need to link your %s account and your telegram account."
+msgstr ""
+
+#: src/Telegram/Commands/StartCommand.php:91
+#, php-format
+msgid "To do this, go to <a href=“%s”>Account</a> and click on the “Link” link."
+msgstr ""
+
+#: src/Telegram/Commands/StartCommand.php:96
+msgid "to view all commands."
+msgstr ""
+
+#: src/Telegram/TelegramIntegration.php:245
+#: src/Telegram/TelegramIntegration.php:293
+#: template-parts/publish/publish-form.php:141
+#: template-parts/publish/publish-form.php:348
+msgid "View"
+msgstr ""
+
+#: src/Telegram/TelegramIntegration.php:383
+msgid "Unable to set telegram webhook with wrong api key or bot username"
+msgstr ""
+
+#: src/Telegram/TelegramIntegration.php:396
+msgid "Unable to set telegram webhook"
+msgstr ""
+
+#: src/ThemeOptions.php:79 vendor/wpshop/core/src/Advertising.php:162
+#: vendor/wpshop/core/src/ThemeSettings.php:79
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
+#: src/ThemeOptions.php:123
+msgid "Join"
+msgstr ""
+
+#: src/ThemeOptions.php:153
+msgid "Publish post"
+msgstr ""
+
+#: src/ThemeOptions.php:165
+msgid "Votes"
+msgstr ""
+
+#: src/ThemeOptions.php:171 src/Vote.php:36 template-subs.php:69
+msgid "Users"
+msgstr ""
+
+#: src/ThemeOptions.php:172 src/Vote.php:37
+msgid "IPs"
+msgstr ""
+
+#: src/ThemeOptions.php:175
+msgid "Method"
+msgstr ""
+
+#: src/User.php:279
+msgid "Subscription expiration date, format: Y-m-d"
+msgstr ""
+
+#: src/User.php:285
+msgid "Invite activations"
+msgstr ""
+
+#: src/User.php:344
+msgid "Sign In"
+msgstr ""
+
+#: src/User.php:375
+msgid "Log Out"
+msgstr ""
+
+#: src/User.php:396
+#, php-format
+msgid "%s profile URL"
+msgstr ""
+
+#: src/Vote.php:123 src/Vote.php:404
+msgid "Sign in to vote"
+msgstr ""
+
+#: src/Vote.php:128
+msgid "You can't vote for yourself."
+msgstr ""
+
+#: src/Vote.php:423
+msgid "Object not found"
+msgstr ""
+
+#: src/Widgets/CommentWidget.php:21
+msgid "Comments Widgets"
+msgstr ""
+
+#: src/Widgets/CommentWidget.php:71
+msgid "Go to Comments"
+msgstr ""
+
+#: src/Widgets/CommentWidget.php:86
+msgid "There are no comments yet."
+msgstr ""
+
+#: src/Widgets/CommentWidget.php:90
+msgid "Header:"
+msgstr ""
+
+#: src/Widgets/CommentWidget.php:94
+msgid "Comments Count:"
+msgstr ""
+
+#: src/Widgets/CommentWidget.php:98
+msgid "Text if there are no comments:"
+msgstr ""
+
+#: src/Widgets/DarkModeSwitcherWidget.php:17
+#: template-parts/admin/setup-assistant/widgets.php:59
+msgid "Dark Mode Switcher"
+msgstr ""
+
+#: src/Widgets/DarkModeSwitcherWidget.php:19
+msgid "Dark mode switcher widget"
+msgstr ""
+
+#: src/Widgets/MenuWidget.php:21
+msgid "Left Menu"
+msgstr ""
+
+#: src/Widgets/MenuWidget.php:23
+msgid "Widget for Left Menu of the Theme"
+msgstr ""
+
+#: src/Widgets/MenuWidget.php:40 template-parts/admin/advertisement.php:113
+msgid "Latest"
+msgstr ""
+
+#: template-bookmarks.php:63 template-bookmarks.php:82
+msgid "No bookmarks"
+msgstr ""
+
+#: template-bookmarks.php:65
+msgid "You haven't added anything to your bookmarks yet."
+msgstr ""
+
+#: template-bookmarks.php:66
+msgid "You can save interesting entries to your bookmarks so that you don't lose them."
+msgstr ""
+
+#: template-bookmarks.php:67
+msgid "To add an entry to your bookmarks, click on the symbol"
+msgstr ""
+
+#: template-bookmarks.php:84
+msgid "The bookmark page is available only to authorized users."
+msgstr ""
+
+#: template-order.php:69
+msgid "Order not found"
+msgstr ""
+
+#: template-order.php:73
+msgid "Your order may have been deleted or expired."
+msgstr ""
+
+#: template-order.php:77
+msgid "Unable to handle payment"
+msgstr ""
+
+#: template-order.php:81
+msgid "There are not available payment providers"
+msgstr ""
+
+#: template-order.php:166 template-parts/elements/subscription-form.php:63
+msgid "Pay"
+msgstr ""
+
+#: template-parts/admin/advertisement.php:26
+#: template-parts/admin/advertisement.php:37
+msgid "Advertisement Settings"
+msgstr ""
+
+#: template-parts/admin/advertisement.php:48
+msgid "Add Block"
+msgstr ""
+
+#: template-parts/admin/advertisement.php:53
+#: template-parts/profile/tab-about.php:180
+#: template-parts/publish/publish-form.php:347
+#: vendor/wpshop/wpshop-settings/src/SettingsRenderer.php:449
+msgid "Save"
+msgstr ""
+
+#: template-parts/admin/advertisement.php:65
+msgid "Content on PC"
+msgstr ""
+
+#: template-parts/admin/advertisement.php:73
+msgid "Content on Mobile Device"
+msgstr ""
+
+#: template-parts/admin/advertisement.php:81
+msgid "Where to insert"
+msgstr ""
+
+#: template-parts/admin/advertisement.php:85
+msgid "(select place type)"
+msgstr ""
+
+#: template-parts/admin/advertisement.php:109
+msgid "Output Options in Feed"
+msgstr ""
+
+#: template-parts/admin/advertisement.php:132
+#: template-parts/admin/advertisement.php:192
+#: template-parts/admin/advertisement.php:220
+#, php-format
+msgid "After every %s post"
+msgstr ""
+
+#: template-parts/admin/advertisement.php:145
+msgid "Output Options in a Post"
+msgstr ""
+
+#: template-parts/admin/advertisement.php:149
+#: vendor/wpshop/core/src/Advertising.php:102
+msgid "Before content"
+msgstr ""
+
+#: template-parts/admin/advertisement.php:154
+#: vendor/wpshop/core/src/Advertising.php:120
+msgid "After content"
+msgstr ""
+
+#: template-parts/admin/advertisement.php:159
+msgid "Before comments"
+msgstr ""
+
+#: template-parts/admin/advertisement.php:164
+msgid "After comments"
+msgstr ""
+
+#: template-parts/admin/advertisement.php:168
+#: template-parts/admin/advertisement.php:202
+#: template-parts/admin/advertisement.php:230
+msgid "Exclude ids:"
+msgstr ""
+
+#: template-parts/admin/advertisement.php:170
+#: template-parts/admin/advertisement.php:176
+#: template-parts/admin/advertisement.php:204
+#: template-parts/admin/advertisement.php:210
+#: template-parts/admin/advertisement.php:232
+#: template-parts/admin/advertisement.php:238
+msgid "comma separated ids"
+msgstr ""
+
+#: template-parts/admin/advertisement.php:174
+#: template-parts/admin/advertisement.php:208
+#: template-parts/admin/advertisement.php:236
+msgid "Only ids:"
+msgstr ""
+
+#: template-parts/admin/advertisement.php:180
+msgid "Show after days(s):"
+msgstr ""
+
+#: template-parts/admin/advertisement.php:189
+msgid "Output Options in Post Category"
+msgstr ""
+
+#: template-parts/admin/advertisement.php:217
+msgid "Output Options in Post Tags"
+msgstr ""
+
+#: template-parts/admin/menu/icon-options-popup.php:18
+msgid "Set Menu Icon"
+msgstr ""
+
+#: template-parts/admin/menu/icon-options-popup.php:28
+msgid "Ok"
+msgstr ""
+
+#: template-parts/admin/menu/icon-options-popup.php:29
+#: template-parts/comments-ajax.php:37 template-parts/comments.php:41
+#: template-parts/profile/tab-about.php:16
+#: template-parts/profile/tab-about.php:116
+#: template-parts/profile/tab-subscription.php:107
+#: template-parts/profile/tab-subscription.php:118
+msgid "Cancel"
+msgstr ""
+
+#: template-parts/admin/settings.php:36
+msgid "Settings Scope"
+msgstr ""
+
+#: template-parts/admin/settings.php:66
+msgid "Setup Assistant"
+msgstr ""
+
+#: template-parts/admin/settings.php:106
+msgid "Sorry, you are not allowed to perform actions on this section."
+msgstr ""
+
+#: template-parts/admin/settings.php:117
+msgid "Theme Version:"
+msgstr ""
+
+#: template-parts/admin/settings/tab-advanced.php:23
+msgid "Advanced Settings"
+msgstr ""
+
+#: template-parts/admin/settings/tab-advanced.php:28
+#: template-parts/admin/settings/tab-advanced.php:32
+msgid "Enable Localized Settings"
+msgstr ""
+
+#: template-parts/admin/settings/tab-advanced.php:34
+msgid "A multi-language plugin was detected, so the localized settings option is automatically enabled"
+msgstr ""
+
+#: template-parts/admin/settings/tab-advanced.php:41
+msgid "Privacy Policy Link"
+msgstr ""
+
+#: template-parts/admin/settings/tab-advanced.php:43
+#: template-parts/admin/settings/tab-payment.php:57
+msgid "You can use the shortcode for <code>[privacy_policy_link]</code> to add a link on the privacy policy page"
+msgstr ""
+
+#: template-parts/admin/settings/tab-advanced.php:48
+msgid "Enable MicroData (schema.org)"
+msgstr ""
+
+#: template-parts/admin/settings/tab-advanced.php:54
+msgid "Disable User Illegal Logins"
+msgstr ""
+
+#: template-parts/admin/settings/tab-advanced.php:56
+msgid "Prohibits the use of words such as 'admin' and similar terms, as well as profanity, as usernames."
+msgstr ""
+
+#: template-parts/admin/settings/tab-advanced.php:62
+msgid "Code"
+msgstr ""
+
+#: template-parts/admin/settings/tab-advanced.php:63
+msgid "Here you can specify the code of metrics, advertising or other necessary scripts"
+msgstr ""
+
+#: template-parts/admin/settings/tab-advanced.php:68
+msgid "Code before </head> tag"
+msgstr ""
+
+#: template-parts/admin/settings/tab-advanced.php:72
+msgid "Code before </body> tag"
+msgstr ""
+
+#: template-parts/admin/settings/tab-dashboard-activate.php:21
+#: template-parts/admin/settings/tab-dashboard.php:72
+#: template-parts/admin/setup-assistant/activation.php:21
+msgid "License"
+msgstr ""
+
+#: template-parts/admin/settings/tab-dashboard-activate.php:22
+#: template-parts/admin/setup-assistant/activation.php:22
+#, php-format
+msgid "To activate the plugin, enter the license key that you receive after payment in the letter or in <a href=\"%s\" target=\"_blank\" rel=\"noopener\">personal account</a>."
+msgstr ""
+
+#: template-parts/admin/settings/tab-dashboard.php:32
+msgid "The theme has been successfully installed!"
+msgstr ""
+
+#: template-parts/admin/settings/tab-dashboard.php:34
+msgid "You need to do a few additional actions to continue."
+msgstr ""
+
+#: template-parts/admin/settings/tab-dashboard.php:35
+msgid "Set up [standard pages](#tab-pages)."
+msgstr ""
+
+#: template-parts/admin/settings/tab-dashboard.php:36
+msgid "Set up subscription [payment methods](#tab-payment)."
+msgstr ""
+
+#: template-parts/admin/settings/tab-dashboard.php:37
+msgid "Customize menu."
+msgstr ""
+
+#: template-parts/admin/settings/tab-dashboard.php:38
+msgid "If everything is ready, you can close this window."
+msgstr ""
+
+#: template-parts/admin/settings/tab-dashboard.php:52
+msgid "Documentation"
+msgstr ""
+
+#: template-parts/admin/settings/tab-dashboard.php:53
+msgid "If you have a question about our product, perhaps the answer is already in our documentation."
+msgstr ""
+
+#: template-parts/admin/settings/tab-dashboard.php:63
+msgid "Questions and answers"
+msgstr ""
+
+#: template-parts/admin/settings/tab-dashboard.php:64
+msgid "Section of frequently asked questions and answers to them. You can quickly find the answer to a question."
+msgstr ""
+
+#: template-parts/admin/settings/tab-dashboard.php:79
+msgid "The license is successfully activated."
+msgstr ""
+
+#: template-parts/admin/settings/tab-dashboard.php:81
+msgid "The license key is hidden for security purposes."
+msgstr ""
+
+#: template-parts/admin/settings/tab-dashboard.php:84
+msgid "Personal account"
+msgstr ""
+
+#: template-parts/admin/settings/tab-dashboard.php:86
+msgid "Are you sure you want to remove the license key?"
+msgstr ""
+
+#: template-parts/admin/settings/tab-dashboard.php:86
+msgid "Remove License"
+msgstr ""
+
+#: template-parts/admin/settings/tab-karma.php:26
+msgid "Post Publish"
+msgstr ""
+
+#: template-parts/admin/settings/tab-karma.php:30
+msgid "Comment Publish"
+msgstr ""
+
+#: template-parts/admin/settings/tab-karma.php:34
+msgid "Comment Spam"
+msgstr ""
+
+#: template-parts/admin/settings/tab-karma.php:38
+msgid "Post Vote"
+msgstr ""
+
+#: template-parts/admin/settings/tab-karma.php:42
+msgid "Comment Vote"
+msgstr ""
+
+#: template-parts/admin/settings/tab-pages.php:22
+msgid "(select page)"
+msgstr ""
+
+#: template-parts/admin/settings/tab-pages.php:42
+msgid "Create And Setup The Pages"
+msgstr ""
+
+#: template-parts/admin/settings/tab-payment.php:25
+msgid "Subscription Prices"
+msgstr ""
+
+#: template-parts/admin/settings/tab-payment.php:49
+msgid "Payment Methods"
+msgstr ""
+
+#: template-parts/admin/settings/tab-payment.php:55
+msgid "Text of Acceptance of the Offer"
+msgstr ""
+
+#: template-parts/admin/settings/tab-payment.php:59
+msgid "and <code>[offer_link]</code> to add link on the offer page"
+msgstr ""
+
+#: template-parts/admin/settings/tab-payment.php:67
+msgid "Confirmation Text"
+msgstr ""
+
+#: template-parts/admin/settings/tab-payment.php:75
+msgid "Errors Limit"
+msgstr ""
+
+#: template-parts/admin/settings/tab-payment.php:77
+msgid "The number of errors above which the automatic payment will be canceled."
+msgstr ""
+
+#: template-parts/admin/settings/tab-payment.php:84
+#: template-parts/admin/settings/tab-payment.php:135
+#: template-parts/admin/settings/tab-payment.php:181
+#: template-parts/admin/settings/tab-payment.php:332
+#: template-parts/admin/settings/tab-telegram.php:159
+msgid "Enable Logs"
+msgstr ""
+
+#: template-parts/admin/settings/tab-payment.php:89
+msgid "Enable Fake Recurring Date"
+msgstr ""
+
+#: template-parts/admin/settings/tab-payment.php:91
+msgid "Usually it is required to provide screenshots of the interface to payment providers to activate recurring payments. In this case, you need to temporarily enable the option."
+msgstr ""
+
+#: template-parts/admin/settings/tab-payment.php:93
+msgid "This date will be displayed in the profile in the \"Subscription\" tab, if the user has administrator rights."
+msgstr ""
+
+#: template-parts/admin/settings/tab-payment.php:124
+msgid "Enable YooKassa"
+msgstr ""
+
+#: template-parts/admin/settings/tab-payment.php:129
+#: template-parts/admin/settings/tab-payment.php:176
+msgid "Enable Recurring Payments"
+msgstr ""
+
+#: template-parts/admin/settings/tab-payment.php:131
+msgid "Before you can use them, you need to write to a ЮКасса manager to activate them."
+msgstr ""
+
+#: template-parts/admin/settings/tab-payment.php:141
+msgid "Shop Id"
+msgstr ""
+
+#: template-parts/admin/settings/tab-payment.php:144
+msgid "Api Key"
+msgstr ""
+
+#: template-parts/admin/settings/tab-payment.php:147
+#: template-parts/admin/settings/tab-payment.php:206
+msgid "Send Data for a Check"
+msgstr ""
+
+#: template-parts/admin/settings/tab-payment.php:149
+msgid "Settings in YooKassa: Integration > HTTP Notifications"
+msgstr ""
+
+#: template-parts/admin/settings/tab-payment.php:152
+msgid "URL for notifications"
+msgstr ""
+
+#: template-parts/admin/settings/tab-payment.php:171
+msgid "Enable RoboKassa"
+msgstr ""
+
+#: template-parts/admin/settings/tab-payment.php:178
+msgid "This service is available only upon prior agreement by RoboKassa administration."
+msgstr ""
+
+#: template-parts/admin/settings/tab-payment.php:187
+msgid "Merchant Login"
+msgstr ""
+
+#: template-parts/admin/settings/tab-payment.php:190
+msgid "County"
+msgstr ""
+
+#: template-parts/admin/settings/tab-payment.php:191
+msgid "Russia"
+msgstr ""
+
+#: template-parts/admin/settings/tab-payment.php:192
+msgid "Kazakhstan"
+msgstr ""
+
+#: template-parts/admin/settings/tab-payment.php:197
+#: template-parts/admin/settings/tab-payment.php:347
+msgid "Currency"
+msgstr ""
+
+#: template-parts/admin/settings/tab-payment.php:198
+#: template-parts/admin/settings/tab-payment.php:348
+msgid "Rubles"
+msgstr ""
+
+#: template-parts/admin/settings/tab-payment.php:199
+msgid "Dollars"
+msgstr ""
+
+#: template-parts/admin/settings/tab-payment.php:200
+msgid "Euro"
+msgstr ""
+
+#: template-parts/admin/settings/tab-payment.php:201
+msgid "Tenge"
+msgstr ""
+
+#: template-parts/admin/settings/tab-payment.php:210
+msgid "Enable Test Mode"
+msgstr ""
+
+#: template-parts/admin/settings/tab-payment.php:213
+msgid "Password #1"
+msgstr ""
+
+#: template-parts/admin/settings/tab-payment.php:216
+msgid "Password #2"
+msgstr ""
+
+#: template-parts/admin/settings/tab-payment.php:219
+msgid "Hash Algorithm"
+msgstr ""
+
+#: template-parts/admin/settings/tab-payment.php:229
+msgid "Url Addresses for Merchant Settings"
+msgstr ""
+
+#: template-parts/admin/settings/tab-payment.php:233
+msgid "Result Url"
+msgstr ""
+
+#: template-parts/admin/settings/tab-payment.php:246
+msgid "Success Url"
+msgstr ""
+
+#: template-parts/admin/settings/tab-payment.php:259
+msgid "Fail Url"
+msgstr ""
+
+#: template-parts/admin/settings/tab-payment.php:323
+msgid "Enable Prodamus"
+msgstr ""
+
+#: template-parts/admin/settings/tab-payment.php:338
+#: template-parts/admin/settings/tab-settings.php:227
+msgid "Secret Key"
+msgstr ""
+
+#: template-parts/admin/settings/tab-payment.php:341
+msgid "Payment Url"
+msgstr ""
+
+#: template-parts/admin/settings/tab-payment.php:344
+msgid "Enable Debug"
+msgstr ""
+
+#: template-parts/admin/settings/tab-pro.php:31
+msgid "Enable Expire Notification"
+msgstr ""
+
+#: template-parts/admin/settings/tab-pro.php:35
+msgid "If Account is not Pro"
+msgstr ""
+
+#: template-parts/admin/settings/tab-pro.php:39
+msgid "Allow to Create Post"
+msgstr ""
+
+#: template-parts/admin/settings/tab-pro.php:43
+msgid "Can add Comments"
+msgstr ""
+
+#: template-parts/admin/settings/tab-settings.php:28
+msgid "Require Invite on Registration"
+msgstr ""
+
+#: template-parts/admin/settings/tab-settings.php:31
+msgid "Infinite Scroll"
+msgstr ""
+
+#: template-parts/admin/settings/tab-settings.php:33
+msgid "Enable Infinite on Home"
+msgstr ""
+
+#: template-parts/admin/settings/tab-settings.php:36
+msgid "Enable Infinite on Popular"
+msgstr ""
+
+#: template-parts/admin/settings/tab-settings.php:39
+msgid "Enable Infinite on Subscriptions"
+msgstr ""
+
+#: template-parts/admin/settings/tab-settings.php:42
+msgid "Enable Infinite on Bookmarks"
+msgstr ""
+
+#: template-parts/admin/settings/tab-settings.php:45
+msgid "Full Content in Post Cards"
+msgstr ""
+
+#: template-parts/admin/settings/tab-settings.php:48
+msgid "Show Full Content in the Feed on the Home Page"
+msgstr ""
+
+#: template-parts/admin/settings/tab-settings.php:51
+msgid "Show Full Content in the Feed on the Popular"
+msgstr ""
+
+#: template-parts/admin/settings/tab-settings.php:54
+msgid "Show Full Content in the Feed on the Subscriptions"
+msgstr ""
+
+#: template-parts/admin/settings/tab-settings.php:57
+msgid "Show Full Content in the Feed on the Bookmarks"
+msgstr ""
+
+#: template-parts/admin/settings/tab-settings.php:61
+msgid "Content Accessibility by Default"
+msgstr ""
+
+#: template-parts/admin/settings/tab-settings.php:71
+msgid "Page"
+msgstr ""
+
+#: template-parts/admin/settings/tab-settings.php:79
+#: template-parts/admin/settings/tab-telegram.php:41
+msgid "Publishing"
+msgstr ""
+
+#: template-parts/admin/settings/tab-settings.php:83
+msgid "Default Post Status"
+msgstr ""
+
+#: template-parts/admin/settings/tab-settings.php:84
+#: template-parts/publish/publish-form.php:350
+msgid "Publish"
+msgstr ""
+
+#: template-parts/admin/settings/tab-settings.php:85
+#: template-parts/profile/tab-posts.php:30
+msgid "Pending"
+msgstr ""
+
+#: template-parts/admin/settings/tab-settings.php:90
+msgid "Allow to Create Tags"
+msgstr ""
+
+#: template-parts/admin/settings/tab-settings.php:94
+msgid "Edit Time (sec.)"
+msgstr ""
+
+#: template-parts/admin/settings/tab-settings.php:100
+msgid "Excluded Categories"
+msgstr ""
+
+#: template-parts/admin/settings/tab-settings.php:102
+msgid "IDs of the categories that will be excluded in the publication form."
+msgstr ""
+
+#: template-parts/admin/settings/tab-settings.php:111
+msgid "Enable Related Posts"
+msgstr ""
+
+#: template-parts/admin/settings/tab-settings.php:119
+msgid "Show Posts Count"
+msgstr ""
+
+#: template-parts/admin/settings/tab-settings.php:123
+msgid "Search Related By"
+msgstr ""
+
+#: template-parts/admin/settings/tab-settings.php:127
+msgid "Exclude Category Ids"
+msgstr ""
+
+#: template-parts/admin/settings/tab-settings.php:131
+msgid "Exclude Tag Ids"
+msgstr ""
+
+#: template-parts/admin/settings/tab-settings.php:135
+msgid "Exclude Post Ids"
+msgstr ""
+
+#: template-parts/admin/settings/tab-settings.php:139
+msgid "Order By"
+msgstr ""
+
+#: template-parts/admin/settings/tab-settings.php:147
+msgid "Enable Comment for Guests"
+msgstr ""
+
+#: template-parts/admin/settings/tab-settings.php:153
+msgid "Enable for Members Only"
+msgstr ""
+
+#: template-parts/admin/settings/tab-settings.php:155
+msgid "in this case the “Enable Comment for Guests” option will be ignored"
+msgstr ""
+
+#: template-parts/admin/settings/tab-settings.php:160
+msgid "Show Comments by Button"
+msgstr ""
+
+#: template-parts/admin/settings/tab-settings.php:165
+msgid "Like Settings"
+msgstr ""
+
+#: template-parts/admin/settings/tab-settings.php:169
+msgid "Vote Method"
+msgstr ""
+
+#: template-parts/admin/settings/tab-settings.php:173
+msgid "Like Icons"
+msgstr ""
+
+#: template-parts/admin/settings/tab-settings.php:174
+msgid "Chevrons"
+msgstr ""
+
+#: template-parts/admin/settings/tab-settings.php:175
+msgid "Thumbs"
+msgstr ""
+
+#: template-parts/admin/settings/tab-settings.php:176
+msgid "Hearts"
+msgstr ""
+
+#: template-parts/admin/settings/tab-settings.php:177
+msgid "Plus and Minus"
+msgstr ""
+
+#: template-parts/admin/settings/tab-settings.php:182
+msgid "Show Score"
+msgstr ""
+
+#: template-parts/admin/settings/tab-settings.php:186
+msgid "Show Dislike Button"
+msgstr ""
+
+#: template-parts/admin/settings/tab-settings.php:190
+msgid "Breadcrumbs"
+msgstr ""
+
+#: template-parts/admin/settings/tab-settings.php:194
+msgid "Enable Breadcrumbs"
+msgstr ""
+
+#: template-parts/admin/settings/tab-settings.php:198
+msgid "Use Breadcrumbs from Plugins"
+msgstr ""
+
+#: template-parts/admin/settings/tab-settings.php:202
+msgid "Homepage Text"
+msgstr ""
+
+#: template-parts/admin/settings/tab-settings.php:206
+msgid "Homepage link"
+msgstr ""
+
+#: template-parts/admin/settings/tab-settings.php:210
+msgid "Separator"
+msgstr ""
+
+#: template-parts/admin/settings/tab-settings.php:214
+msgid "Show Paged"
+msgstr ""
+
+#: template-parts/admin/settings/tab-settings.php:219
+msgid "Google reCAPTCHA (v3)"
+msgstr ""
+
+#: template-parts/admin/settings/tab-settings.php:223
+msgid "Site Key"
+msgstr ""
+
+#: template-parts/admin/settings/tab-settings.php:231
+msgid "Enable on Register"
+msgstr ""
+
+#: template-parts/admin/settings/tab-social.php:27
+msgid "search profile..."
+msgstr ""
+
+#: template-parts/admin/settings/tab-social.php:31
+msgid "Social Networks"
+msgstr ""
+
+#: template-parts/admin/settings/tab-social.php:48
+msgid "Enable Share Buttons"
+msgstr ""
+
+#: template-parts/admin/settings/tab-telegram.php:42
+msgid "Create a channel or group in Telegram."
+msgstr ""
+
+#: template-parts/admin/settings/tab-telegram.php:44
+#, php-format
+msgid "Add Bot (%s) as an administrator of your channel/group."
+msgstr ""
+
+#: template-parts/admin/settings/tab-telegram.php:47
+msgid "Get an ID using [@MyChatInfoBot](https://t.me/MyChatInfoBot) or [@IDBot](https://t.me/username_to_id_bot) and specify in the field below"
+msgstr ""
+
+#: template-parts/admin/settings/tab-telegram.php:51
+msgid "Channel Or Group"
+msgstr ""
+
+#: template-parts/admin/settings/tab-telegram.php:57
+msgid "New Post Message"
+msgstr ""
+
+#: template-parts/admin/settings/tab-telegram.php:70
+msgid "Available tags you can find here"
+msgstr ""
+
+#: template-parts/admin/settings/tab-telegram.php:71
+msgid "Important: If you use an illegal tag, the message will not be sent."
+msgstr ""
+
+#: template-parts/admin/settings/tab-telegram.php:73
+msgid "Available variables"
+msgstr ""
+
+#: template-parts/admin/settings/tab-telegram.php:75
+msgid "post link"
+msgstr ""
+
+#: template-parts/admin/settings/tab-telegram.php:76
+msgid "post title"
+msgstr ""
+
+#: template-parts/admin/settings/tab-telegram.php:77
+msgid "post excerpt"
+msgstr ""
+
+#: template-parts/admin/settings/tab-telegram.php:78
+msgid "author link"
+msgstr ""
+
+#: template-parts/admin/settings/tab-telegram.php:79
+msgid "author name"
+msgstr ""
+
+#: template-parts/admin/settings/tab-telegram.php:86
+msgid "Enable Notifications"
+msgstr ""
+
+#: template-parts/admin/settings/tab-telegram.php:90
+msgid "Notify Only About Private Posts"
+msgstr ""
+
+#: template-parts/admin/settings/tab-telegram.php:94
+msgid "Send Post Thumbnail"
+msgstr ""
+
+#: template-parts/admin/settings/tab-telegram.php:100
+msgid "Enable auto-kick"
+msgstr ""
+
+#: template-parts/admin/settings/tab-telegram.php:102
+msgid "Users with expired subscriptions will be automatically excluded from the group"
+msgstr ""
+
+#: template-parts/admin/settings/tab-telegram.php:108
+msgid "Prevent kick"
+msgstr ""
+
+#: template-parts/admin/settings/tab-telegram.php:110
+msgid "Id of users who will not be automatically excluded from the group, comma seperated values"
+msgstr ""
+
+#: template-parts/admin/settings/tab-telegram.php:117
+msgid "Bot Settings"
+msgstr ""
+
+#: template-parts/admin/settings/tab-telegram.php:118
+msgid "Instruction"
+msgstr ""
+
+#: template-parts/admin/settings/tab-telegram.php:120
+#, php-format
+msgid " Create a bot by sending %s command to [@BotFather](https://t.me/BotFather)"
+msgstr ""
+
+#: template-parts/admin/settings/tab-telegram.php:124
+#, php-format
+msgid "After completing the %s steps, you will receive a token and a bot name. Copy these values and paste them into appropriate fields."
+msgstr ""
+
+#: template-parts/admin/settings/tab-telegram.php:127
+msgid "Generate a webhook key. It is needed for secure processing of requests from telegram bot."
+msgstr ""
+
+#: template-parts/admin/settings/tab-telegram.php:128
+msgid "Save the settings."
+msgstr ""
+
+#: template-parts/admin/settings/tab-telegram.php:129
+#, php-format
+msgid "After saving the settings, if the %s and %s fields are filled in, the %s button will become available. Press it to activate the bot commands."
+msgstr ""
+
+#: template-parts/admin/settings/tab-telegram.php:130
+#: template-parts/admin/settings/tab-telegram.php:137
+msgid "Bot Token"
+msgstr ""
+
+#: template-parts/admin/settings/tab-telegram.php:131
+#: template-parts/admin/settings/tab-telegram.php:141
+msgid "Bot Username"
+msgstr ""
+
+#: template-parts/admin/settings/tab-telegram.php:132
+#: template-parts/admin/settings/tab-telegram.php:152
+msgid "Set Webhook"
+msgstr ""
+
+#: template-parts/admin/settings/tab-telegram.php:145
+msgid "Webhook Key"
+msgstr ""
+
+#: template-parts/admin/settings/tab-telegram.php:163
+msgid "Admin IDs"
+msgstr ""
+
+#: template-parts/admin/setup-assistant.php:50
+msgid "Installation and Setup Wizard"
+msgstr ""
+
+#: template-parts/admin/setup-assistant.php:77
+msgid "Next"
+msgstr ""
+
+#: template-parts/admin/setup-assistant.php:80
+msgid "Done"
+msgstr ""
+
+#: template-parts/admin/setup-assistant/menu.php:21
+msgid "Create the Minimum Necessary Menu Items"
+msgstr ""
+
+#: template-parts/admin/setup-assistant/menu.php:24
+msgid "Here you can create a top menu and a menu at the bottom of the sidebar."
+msgstr ""
+
+#: template-parts/admin/setup-assistant/menu.php:25
+msgid "The menu at the top of the sidebar is created as a separate widget in the next step."
+msgstr ""
+
+#: template-parts/admin/setup-assistant/menu.php:32
+msgid "Top Menu Elements"
+msgstr ""
+
+#: template-parts/admin/setup-assistant/menu.php:52
+msgid "Menu Elements for the Bottom of the Sidebar"
+msgstr ""
+
+#: template-parts/admin/setup-assistant/pages.php:16
+msgid "Create the necessary pages"
+msgstr ""
+
+#: template-parts/admin/setup-assistant/pages.php:19
+msgid "Profile, Subscriptions, Bookmarks, etc. pages are required for the theme to work properly."
+msgstr ""
+
+#: template-parts/admin/setup-assistant/pages.php:20
+msgid "Click the \"Create Pages\" button to automatically create and setup pages."
+msgstr ""
+
+#: template-parts/admin/setup-assistant/widgets.php:25
+msgid "Create Default Widgets"
+msgstr ""
+
+#: template-parts/admin/setup-assistant/widgets.php:28
+msgid "The selected widgets will be automatically added to the sidebar on the left."
+msgstr ""
+
+#: template-parts/admin/setup-assistant/widgets.php:35
+msgid "Menu Widget Elements"
+msgstr ""
+
+#: template-parts/admin/setup-assistant/widgets.php:52
+msgid "Widgets for the Bottom of the Sidebar"
+msgstr ""
+
+#: template-parts/admin/setup-assistant/widgets.php:66
+msgid "Sidebar Bottom Menu"
+msgstr ""
+
+#: template-parts/comments-ajax.php:15 template-parts/comments.php:20
+msgid "Comments:"
+msgstr ""
+
+#: template-parts/comments-ajax.php:41 template-parts/comments.php:45
+msgctxt "noun"
+msgid "Comment"
+msgstr ""
+
+#: template-parts/comments-ajax.php:53 template-parts/comments.php:57
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr ""
+
+#: template-parts/comments-ajax.php:81 template-parts/comments.php:85
+msgid "Name"
+msgstr ""
+
+#: template-parts/comments-ajax.php:94 template-parts/comments.php:98
+#: template-parts/profile/auth-form.php:91
+#: template-parts/profile/auth-form.php:135
+#: template-parts/profile/auth-form.php:215
+msgid "Email"
+msgstr ""
+
+#: template-parts/comments-ajax.php:108 template-parts/comments.php:112
+#: template-parts/elements/social-profiles.php:26
+msgid "Website"
+msgstr ""
+
+#: template-parts/comments-ajax.php:130 template-parts/comments.php:134
+msgid "Save my name, email, and website in this browser for the next time I comment."
+msgstr ""
+
+#: template-parts/comments-ajax.php:170 template-parts/comments.php:176
+msgid "Comments are closed."
+msgstr ""
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#: template-parts/content-none.php:24
+#, php-format
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:44
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr ""
+
+#: template-parts/content-page.php:39 template-parts/post/content.php:45
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/elements/follow-button.php:27
+#: template-parts/elements/follow-button.php:28
+#: template-parts/elements/follow-button.php:37
+#: template-parts/mail/_template-content.php:49
+msgid "Unsubscribe"
+msgstr ""
+
+#: template-parts/elements/follow-button.php:27
+#: template-parts/elements/follow-button.php:28
+#: template-parts/elements/follow-button.php:38
+msgid "Subscribe"
+msgstr ""
+
+#: template-parts/elements/post-card/content/excerpt.php:23
+#: template-parts/post-card/content.php:40 template-parts/post/content.php:30
+#, php-format
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
+
+#: template-parts/elements/scroll-to-top.php:24
+msgctxt "scrolltop_title"
+msgid "Scroll to Top"
+msgstr ""
+
+#: template-parts/elements/subscription-form.php:48
+msgid "For payment, enter your mail:"
+msgstr ""
+
+#: template-parts/elements/subscription-form.php:51
+#, php-format
+msgid "or [log in](%s)"
+msgstr ""
+
+#: template-parts/mail/_template-content.php:46
+#, php-format
+msgid "You have received this email because you are registered on the website: %s."
+msgstr ""
+
+#: template-parts/mail/membership-expired.php:13
+msgid "Your subscription will expire soon"
+msgstr ""
+
+#: template-parts/mail/order-create.php:23
+msgctxt "mail order"
+msgid "Order"
+msgstr ""
+
+#: template-parts/mail/order-create.php:25
+msgctxt "mail order"
+msgid "has been successfully created."
+msgstr ""
+
+#: template-parts/mail/order-create.php:28
+msgctxt "mail order"
+msgid "You can track the status, pay for the order or choose a payment method on the page:"
+msgstr ""
+
+#: template-parts/mail/order-create.php:36
+msgctxt "mail order"
+msgid "Your order"
+msgstr ""
+
+#: template-parts/mail/order-finish.php:22
+#, php-format
+msgctxt "mail order"
+msgid "Order #%s has been successfully activated."
+msgstr ""
+
+#: template-parts/mail/order-finish.php:38
+#, php-format
+msgctxt "mail order"
+msgid "Thanks for choosing %s."
+msgstr ""
+
+#: template-parts/mail/register.php:23
+msgid "You're registered on"
+msgstr ""
+
+#: template-parts/mail/register.php:37 template-parts/profile/auth-form.php:95
+#: template-parts/profile/auth-form.php:139
+msgid "Password"
+msgstr ""
+
+#: template-parts/mail/register.php:45
+msgid "Sing In"
+msgstr ""
+
+#: template-parts/mail/scheduled-payment.php:22
+#, php-format
+msgid "On %s the subscription renewal fee will be automatically charged."
+msgstr ""
+
+#: template-parts/mail/scheduled-payment.php:27
+#, php-format
+msgid "You can cancel the autopayment in your [profile](%s)."
+msgstr ""
+
+#: template-parts/no-access.php:9 template-parts/no-bookmarks.php:9
+#: template-parts/publish/no-allowed.php:14
+msgctxt "link"
+msgid "Join"
+msgstr ""
+
+#: template-parts/no-logged-in.php:12
+msgid "Authorization required"
+msgstr ""
+
+#: template-parts/no-logged-in.php:13
+msgid "Sorry, you dont have permission to this part."
+msgstr ""
+
+#: template-parts/no-logged-in.php:14 template-parts/profile/auth-form.php:73
+#: template-parts/profile/auth-form.php:88
+#: template-parts/profile/auth-form.php:114
+#: template-parts/profile/auth-form.php:178
+#: template-parts/profile/auth-form.php:221
+msgid "Log in"
+msgstr ""
+
+#: template-parts/order-fail.php:25
+msgid "Failed to pay for the order."
+msgstr ""
+
+#: template-parts/order-fail.php:26
+#, php-format
+msgid "You can try to <a href=\"%s\">pay</a> again."
+msgstr ""
+
+#: template-parts/order-success.php:23
+msgid "Congratulations! Your order has been successfully paid."
+msgstr ""
+
+#: template-parts/post/excerpt.php:19
+msgid "excerpt preview"
+msgstr ""
+
+#: template-parts/post/image.php:24
+msgid "image preview"
+msgstr ""
+
+#: template-parts/profile/auth-form.php:42
+msgid "Password has been successfully updated."
+msgstr ""
+
+#: template-parts/profile/auth-form.php:67
+msgid "Enter new password"
+msgstr ""
+
+#: template-parts/profile/auth-form.php:72
+msgid "Set password"
+msgstr ""
+
+#: template-parts/profile/auth-form.php:96
+msgid "Forget?"
+msgstr ""
+
+#: template-parts/profile/auth-form.php:102
+msgid "Remember Me"
+msgstr ""
+
+#: template-parts/profile/auth-form.php:115
+#: template-parts/profile/auth-form.php:125
+#: template-parts/profile/auth-form.php:177
+#: template-parts/profile/auth-form.php:222
+msgid "Sign up"
+msgstr ""
+
+#: template-parts/profile/auth-form.php:128
+msgid "User name"
+msgstr ""
+
+#: template-parts/profile/auth-form.php:131
+msgid "Used in your profile address and @user_name mentions. Only:"
+msgstr ""
+
+#: template-parts/profile/auth-form.php:157
+msgid "Accept privacy policy"
+msgstr ""
+
+#: template-parts/profile/auth-form.php:212
+msgid "Forget password?"
+msgstr ""
+
+#: template-parts/profile/tab-about.php:12
+msgid "Apply"
+msgstr ""
+
+#: template-parts/profile/tab-about.php:27
+msgid "Upload Avatar"
+msgstr ""
+
+#: template-parts/profile/tab-about.php:29
+msgid "Remove Avatar"
+msgstr ""
+
+#: template-parts/profile/tab-about.php:37
+msgid "First Name"
+msgstr ""
+
+#: template-parts/profile/tab-about.php:47
+msgid "Last Name"
+msgstr ""
+
+#: template-parts/profile/tab-about.php:70
+msgid "Login"
+msgstr ""
+
+#: template-parts/profile/tab-about.php:82
+#: template-parts/profile/tab-about.php:99
+msgid "New Password"
+msgstr ""
+
+#: template-parts/profile/tab-about.php:86
+msgid "Set New Password"
+msgstr ""
+
+#: template-parts/profile/tab-about.php:90
+msgid "Old Password"
+msgstr ""
+
+#: template-parts/profile/tab-about.php:92
+#: template-parts/profile/tab-about.php:101
+#: template-parts/profile/tab-about.php:110
+msgid "show password"
+msgstr ""
+
+#: template-parts/profile/tab-about.php:108
+msgid "Confirm New Password"
+msgstr ""
+
+#: template-parts/profile/tab-about.php:123
+msgid "Display name publicly as"
+msgstr ""
+
+#: template-parts/profile/tab-about.php:128
+msgid "Nickname"
+msgstr ""
+
+#: template-parts/profile/tab-about.php:129
+msgid "First Name and Last Name"
+msgstr ""
+
+#: template-parts/profile/tab-about.php:142
+msgid "About Me"
+msgstr ""
+
+#: template-parts/profile/tab-about.php:152
+msgid "Site"
+msgstr ""
+
+#: template-parts/profile/tab-comments.php:21
+msgid "link"
+msgstr ""
+
+#: template-parts/profile/tab-karma.php:18
+msgid "What karma is awarded for"
+msgstr ""
+
+#: template-parts/profile/tab-karma.php:40
+msgid "The history of karma change"
+msgstr ""
+
+#: template-parts/profile/tab-posts.php:14
+#: template-parts/publish/publish-form.php:123
+msgid "Drafts"
+msgstr ""
+
+#: template-parts/profile/tab-posts.php:46
+msgid "Published"
+msgstr ""
+
+#: template-parts/profile/tab-subscription.php:21
+msgid "Active for up"
+msgstr ""
+
+#: template-parts/profile/tab-subscription.php:38
+#, php-format
+msgid "to %s, day: %d"
+msgid_plural "to %s, days: %d"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: template-parts/profile/tab-subscription.php:42
+msgid "Renew"
+msgstr ""
+
+#: template-parts/profile/tab-subscription.php:47
+msgid "Not active."
+msgstr ""
+
+#: template-parts/profile/tab-subscription.php:52
+msgid "Buy"
+msgstr ""
+
+#: template-parts/profile/tab-subscription.php:88
+msgid "Activate Invite"
+msgstr ""
+
+#: template-parts/profile/tab-subscription.php:96
+msgid "Autopayment"
+msgstr ""
+
+#: template-parts/profile/tab-subscription.php:100
+msgid "Dates of the next automatic debit"
+msgstr ""
+
+#: template-parts/profile/tab-subscription.php:113
+msgid "Date of the next automatic debit"
+msgstr ""
+
+#: template-parts/profile/tab-telegram.php:20
+msgid "Telegram bot"
+msgstr ""
+
+#: template-parts/profile/tab-telegram.php:28
+msgid "Bot is bound to @"
+msgstr ""
+
+#: template-parts/profile/tab-telegram.php:31
+#, php-format
+msgid "If for some reason you are unable to access the chat, try <a href=“%s” target=“_blank”>bind</a> the bot again."
+msgstr ""
+
+#: template-parts/profile/tab-telegram.php:36
+msgid "Bind"
+msgstr ""
+
+#: template-parts/profile/tab-telegram.php:39
+msgid "Without subscription the bot does not work"
+msgstr ""
+
+#: template-parts/profile/tab-telegram.php:43
+msgid "To get access to the closed Telegram chat - bind the bot. It will give you a link to join."
+msgstr ""
+
+#: template-parts/profile/tab-telegram.php:46
+msgid "Closed Telegram chat has not been created yet"
+msgstr ""
+
+#: template-parts/publish/expired-edit.php:11
+msgid "Sorry, you are not allowed to edit the post."
+msgstr ""
+
+#: template-parts/publish/no-allowed.php:13
+msgid "Sorry, you dont have permission to publish posts."
+msgstr ""
+
+#: template-parts/publish/publish-form.php:139
+msgid "You are currently editing this post."
+msgstr ""
+
+#: template-parts/publish/publish-form.php:142
+msgid "Edit"
+msgstr ""
+
+#: template-parts/publish/publish-form.php:161
+msgid "An excerpt is a short description of a post in two sentences. Usually motivating to go in and read the text. The excerpt will appear below the title and will always be visible, regardless of your privacy settings."
+msgstr ""
+
+#: template-parts/publish/publish-form.php:169
+msgid "Text"
+msgstr ""
+
+#: template-parts/publish/publish-form.php:174
+msgid "Topic"
+msgstr ""
+
+#: template-publish.php:58
+msgid "Add new"
+msgstr ""
+
+#: template-publish.php:58
+msgid "Edit post"
+msgstr ""
+
+#: template-subs.php:62
+msgid "My Subscriptions"
+msgstr ""
+
+#: template-subs.php:79
+msgid "Topics"
+msgstr ""
+
+#: template-top.php:50
+msgid "Longest subscription"
+msgstr ""
+
+#: template-top.php:94
+msgid "Biggest karma"
+msgstr ""
+
+#: template-top.php:142
+msgid "Best posts in 3 months"
+msgstr ""
+
+#: vendor/wpshop/core/src/AdminNotices.php:82
+msgid "Action failed. Please refresh the page and retry."
+msgstr ""
+
+#: vendor/wpshop/core/src/Advertising.php:69
+#: vendor/wpshop/core/src/Advertising.php:70
+#: vendor/wpshop/core/src/Advertising.php:92
+msgid "Advertising"
+msgstr ""
+
+#: vendor/wpshop/core/src/Advertising.php:111
+msgid "Middle content"
+msgstr ""
+
+#: vendor/wpshop/core/src/Advertising.php:129
+msgid "After paragraph"
+msgstr ""
+
+#: vendor/wpshop/core/src/Advertising.php:210
+msgid "Desktop"
+msgstr ""
+
+#: vendor/wpshop/core/src/Advertising.php:215
+msgid "Mobile"
+msgstr ""
+
+#: vendor/wpshop/core/src/Advertising.php:222
+msgid "Show after"
+msgstr ""
+
+#: vendor/wpshop/core/src/Advertising.php:222
+msgid "paragraph. If set to 0 - not displayed"
+msgstr ""
+
+#: vendor/wpshop/core/src/Advertising.php:226
+msgid "Show"
+msgstr ""
+
+#: vendor/wpshop/core/src/Advertising.php:227
+msgid "on the main"
+msgstr ""
+
+#: vendor/wpshop/core/src/Advertising.php:228
+msgid "in posts"
+msgstr ""
+
+#: vendor/wpshop/core/src/Advertising.php:229
+msgid "on pages"
+msgstr ""
+
+#: vendor/wpshop/core/src/Advertising.php:230
+msgid "in the archives"
+msgstr ""
+
+#: vendor/wpshop/core/src/Advertising.php:231
+msgid "in search"
+msgstr ""
+
+#: vendor/wpshop/core/src/Advertising.php:235
+msgid "Minimum characters"
+msgstr ""
+
+#: vendor/wpshop/core/src/Advertising.php:235
+msgid "in the article to show ads"
+msgstr ""
+
+#: vendor/wpshop/core/src/Advertising.php:236
+msgid "Show through"
+msgstr ""
+
+#: vendor/wpshop/core/src/Advertising.php:236
+msgid "days after the post was posted. 0 - show immediately"
+msgstr ""
+
+#: vendor/wpshop/core/src/Advertising.php:237
+#: vendor/wpshop/core/src/Advertising.php:239
+msgid "Show only in"
+msgstr ""
+
+#: vendor/wpshop/core/src/Advertising.php:237
+#: vendor/wpshop/core/src/Advertising.php:238
+msgid "specify post IDs separated by commas"
+msgstr ""
+
+#: vendor/wpshop/core/src/Advertising.php:238
+#: vendor/wpshop/core/src/Advertising.php:240
+msgid "Do not show in"
+msgstr ""
+
+#: vendor/wpshop/core/src/Advertising.php:239
+#: vendor/wpshop/core/src/Advertising.php:240
+msgid "specify category IDs separated by commas"
+msgstr ""
+
+#: vendor/wpshop/core/src/ContactForm.php:79
+msgid "Sorry, but we can't send form. Error #1"
+msgstr ""
+
+#: vendor/wpshop/core/src/ContactForm.php:83
+msgid "Sorry, but we can't send form. Error #2"
+msgstr ""
+
+#: vendor/wpshop/core/src/ContactForm.php:92
+msgid "Fill field "
+msgstr ""
+
+#: vendor/wpshop/core/src/ContactForm.php:105
+msgid "Message from contact form"
+msgstr ""
+
+#: vendor/wpshop/core/src/ContactForm.php:108
+msgid "Wrong e-mail format"
+msgstr ""
+
+#: vendor/wpshop/core/src/ContactForm.php:116
+msgid "Message from"
+msgstr ""
+
+#: vendor/wpshop/core/src/ContactForm.php:155
+msgid "Message sent successfully!"
+msgstr ""
+
+#: vendor/wpshop/core/src/ContactForm.php:211
+msgid "Send"
+msgstr ""
+
+#: vendor/wpshop/core/src/Core.php:47
+#, php-format
+msgid "To activate theme you need to enter the license key on <a href=\"%s\">this page</a>."
+msgstr ""
+
+#: vendor/wpshop/core/src/Core.php:73
+msgid "You need to activate the license in Settings section of Admin panel"
+msgstr ""
+
+#: vendor/wpshop/core/src/Core.php:203
+#, php-format
+msgid "Theme %s requires PHP version >= %s"
+msgstr ""
+
+#: vendor/wpshop/core/src/Core.php:204
+msgid "The version of PHP installed on your hosting is outdated."
+msgstr ""
+
+#: vendor/wpshop/core/src/Core.php:205
+#, php-format
+msgid "Now you use PHP: %s. It can be unsafe and slowly your site. Please upgrade PHP."
+msgstr ""
+
+#: vendor/wpshop/core/src/Core.php:206
+msgid "You can change PHP version by yourself or ask about it your hosting provider."
+msgstr ""
+
+#: vendor/wpshop/core/src/Customizer/Control/PageConstructor.php:103
+#: vendor/wpshop/core/src/Customizer/Control/PageConstructor.php:124
+msgid "Posts output"
+msgstr ""
+
+#: vendor/wpshop/core/src/Customizer/Control/PageConstructor.php:104
+#: vendor/wpshop/core/src/Customizer/Control/PageConstructor.php:127
+#: vendor/wpshop/core/src/Customizer/Control/PageConstructor.php:271
+msgid "HTML"
+msgstr ""
+
+#: vendor/wpshop/core/src/Customizer/Control/PageConstructor.php:154
+msgid "Presets"
+msgstr ""
+
+#: vendor/wpshop/core/src/Customizer/Control/PageConstructor.php:176
+#: vendor/wpshop/core/src/Customizer/Control/PageConstructor.php:262
+msgid "Title tag"
+msgstr ""
+
+#: vendor/wpshop/core/src/Customizer/Control/PageConstructor.php:185
+msgid "Category ID"
+msgstr ""
+
+#: vendor/wpshop/core/src/Customizer/Control/PageConstructor.php:185
+msgid "How find out ID category"
+msgstr ""
+
+#: vendor/wpshop/core/src/Customizer/Control/PageConstructor.php:189
+msgid "display category name as heading"
+msgstr ""
+
+#: vendor/wpshop/core/src/Customizer/Control/PageConstructor.php:193
+msgid "display heading with category link"
+msgstr ""
+
+#: vendor/wpshop/core/src/Customizer/Control/PageConstructor.php:197
+msgid "Post type"
+msgstr ""
+
+#: vendor/wpshop/core/src/Customizer/Control/PageConstructor.php:201
+msgid "Show only posts"
+msgstr ""
+
+#: vendor/wpshop/core/src/Customizer/Control/PageConstructor.php:201
+#: vendor/wpshop/core/src/Customizer/Control/PageConstructor.php:204
+msgid "How find out ID post"
+msgstr ""
+
+#: vendor/wpshop/core/src/Customizer/Control/PageConstructor.php:204
+msgid "Exclude posts"
+msgstr ""
+
+#: vendor/wpshop/core/src/Customizer/Control/PageConstructor.php:207
+msgid "Indentation"
+msgstr ""
+
+#: vendor/wpshop/core/src/Customizer/Control/PageConstructor.php:210
+msgid "Number of posts"
+msgstr ""
+
+#: vendor/wpshop/core/src/Customizer/Control/PageConstructor.php:214
+msgid "show subcategories"
+msgstr ""
+
+#: vendor/wpshop/core/src/Customizer/Control/PageConstructor.php:217
+msgid "Order posts"
+msgstr ""
+
+#: vendor/wpshop/core/src/Customizer/Control/PageConstructor.php:226
+msgid "Type of post cards"
+msgstr ""
+
+#: vendor/wpshop/core/src/Customizer/Control/PageConstructor.php:236
+msgid "Settings post cards"
+msgstr ""
+
+#: vendor/wpshop/core/src/Customizer/Control/PageConstructor.php:247
+#: vendor/wpshop/core/src/Customizer/Control/PageConstructor.php:274
+msgid "CSS classes"
+msgstr ""
+
+#: vendor/wpshop/core/src/Customizer/Control/PageConstructor.php:299
+msgid "default"
+msgstr ""
+
+#: vendor/wpshop/core/src/Customizer/Control/PageConstructor.php:300
+msgid "show"
+msgstr ""
+
+#: vendor/wpshop/core/src/Customizer/Control/PageConstructor.php:301
+msgid "hide"
+msgstr ""
+
+#: vendor/wpshop/core/src/Customizer/Control/Typography.php:104
+msgid "Bold"
+msgstr ""
+
+#: vendor/wpshop/core/src/Customizer/Control/Typography.php:105
+msgid "Italic"
+msgstr ""
+
+#: vendor/wpshop/core/src/Customizer/Control/Typography.php:106
+msgid "Underline"
+msgstr ""
+
+#: vendor/wpshop/core/src/Customizer/Control/Typography.php:107
+msgid "Uppercase"
+msgstr ""
+
+#: vendor/wpshop/core/src/Customizer/Control/Typography.php:113
+msgid "Font-size"
+msgstr ""
+
+#: vendor/wpshop/core/src/Customizer/Control/Typography.php:118
+msgid "Line-height"
+msgstr ""
+
+#: vendor/wpshop/core/src/Customizer/Control/Typography.php:125
+msgid "Color"
+msgstr ""
+
+#: vendor/wpshop/core/src/Partner.php:40
+msgid "Powered by theme"
+msgstr ""
+
+#: vendor/wpshop/core/src/Shortcodes.php:99
+msgid "Show hidden content"
+msgstr ""
+
+#: vendor/wpshop/core/src/Social.php:36
+msgid "Vkontakte"
+msgstr ""
+
+#: vendor/wpshop/core/src/Social.php:38
+msgid "Odnoklassniki"
+msgstr ""
+
+#: vendor/wpshop/core/src/Social.php:40
+msgid "Twitter"
+msgstr ""
+
+#: vendor/wpshop/core/src/StarRating.php:86
+msgid "average"
+msgstr ""
+
+#: vendor/wpshop/core/src/StarRating.php:86
+msgid "from"
+msgstr ""
+
+#: vendor/wpshop/core/src/StarRating.php:88
+msgid "No ratings yet"
+msgstr ""
+
+#: vendor/wpshop/core/src/ThemeSettings.php:60
+msgid "License key"
+msgstr ""
+
+#: vendor/wpshop/core/src/ThemeSettings.php:86
+msgid "You can familiarize yourself with the documentation on the topic"
+msgstr ""
+
+#: vendor/wpshop/core/src/ThemeSettings.php:86
+msgid "by this link"
+msgstr ""
+
+#: vendor/wpshop/core/src/ThemeSettings.php:87
+msgid "Appearance and color settings are in the customizer"
+msgstr ""
+
+#: vendor/wpshop/core/src/ThemeSettings.php:87
+msgid "Appearance> Settings"
+msgstr ""
+
+#: vendor/wpshop/core/src/ThemeSettings.php:112
+msgid "Enter your License key that was sent to the e-mail after the purchase."
+msgstr ""
+
+#: vendor/wpshop/core/src/ThemeSettings.php:113
+msgid "Hide license key after activation"
+msgstr ""
+
+#: vendor/wpshop/core/src/ThemeSettings.php:115
+msgid "You have hidden the license key."
+msgstr ""
+
+#: vendor/wpshop/core/src/ThemeSettings.php:130
+msgid "Export settings"
+msgstr ""
+
+#: vendor/wpshop/core/src/ThemeSettings.php:132
+msgid "Copy this code to any text file to save all settings of this site"
+msgstr ""
+
+#: vendor/wpshop/core/src/ThemeSettings.php:136
+msgid "Import settings"
+msgstr ""
+
+#: vendor/wpshop/core/src/ThemeSettings.php:138
+msgid "Danger! Old settings will be removed before import! Paste code to this field and press Save"
+msgstr ""
+
+#: vendor/wpshop/core/src/ThemeSettings.php:142
+msgid "Reset all settings"
+msgstr ""
+
+#: vendor/wpshop/core/src/ThemeSettings.php:143
+msgid "Danger! Reset all customizer settings. Reset counters, styles, sidebar settings etc."
+msgstr ""
+
+#: vendor/wpshop/core/src/ThemeSettings.php:191
+msgid "How to fix it"
+msgstr ""
+
+#: vendor/wpshop/core/src/ThemeSettings.php:194
+msgid "Activation error"
+msgstr ""
+
+#: vendor/wpshop/core/src/ThemeSettings.php:196
+#: vendor/wpshop/wpshop-settings/src/Maintenance.php:179
+msgid "Can't get response from license server"
+msgstr ""
+
+#: vendor/wpshop/core/src/ThemeSettings.php:291
+msgid "Successfully deleted"
+msgstr ""
+
+#: vendor/wpshop/core/src/ThemeSettings.php:293
+msgid "We cant delete settings"
+msgstr ""
+
+#: vendor/wpshop/core/src/ViewsCounter.php:83
+msgid "Your site does appear to be using WP-PostViews plugin. You can disable it because the theme already can track post views."
+msgstr ""
+
+#: vendor/wpshop/wpshop-settings/src/AbstractSettings.php:168
+msgid "Sorry, you are not allowed to modify unregistered settings for this site."
+msgstr ""
+
+#: vendor/wpshop/wpshop-settings/src/AbstractSettings.php:275
+msgid "You are not allowed to remove the license"
+msgstr ""
+
+#: vendor/wpshop/wpshop-settings/src/Maintenance.php:104
+#: vendor/wpshop/wpshop-settings/src/Maintenance.php:107
+#: vendor/wpshop/wpshop-settings/src/Maintenance.php:182
+msgid "Unable to check license without activation url"
+msgstr ""
+
+#: vendor/wpshop/wpshop-settings/src/SettingsRenderer.php:37
+msgid "Activate"
+msgstr ""
+
+#: vendor/wpshop/wpshop-settings/src/SettingsRenderer.php:526
+msgctxt "translations"
+msgid "Installed"
+msgstr ""
+
+#: vendor/wpshop/wpshop-settings/src/SettingsRenderer.php:563
+msgctxt "translations"
+msgid "Available"
+msgstr ""
+
+#: vendor/yahnis-elsts/plugin-update-checker/Puc/v4p13/Plugin/Ui.php:54
+msgid "View details"
+msgstr ""
+
+#: vendor/yahnis-elsts/plugin-update-checker/Puc/v4p13/Plugin/Ui.php:77
+#, php-format
+msgid "More information about %s"
+msgstr ""
+
+#: vendor/yahnis-elsts/plugin-update-checker/Puc/v4p13/Plugin/Ui.php:128
+msgid "Check for updates"
+msgstr ""
+
+#: vendor/yahnis-elsts/plugin-update-checker/Puc/v4p13/Plugin/Ui.php:214
+#, php-format
+msgctxt "the plugin title"
+msgid "The %s plugin is up to date."
+msgstr ""
+
+#: vendor/yahnis-elsts/plugin-update-checker/Puc/v4p13/Plugin/Ui.php:216
+#, php-format
+msgctxt "the plugin title"
+msgid "A new version of the %s plugin is available."
+msgstr ""
+
+#: vendor/yahnis-elsts/plugin-update-checker/Puc/v4p13/Plugin/Ui.php:218
+#, php-format
+msgctxt "the plugin title"
+msgid "Could not determine if updates are available for %s."
+msgstr ""
+
+#: vendor/yahnis-elsts/plugin-update-checker/Puc/v4p13/Plugin/Ui.php:224
+#, php-format
+msgid "Unknown update checker status \"%s\""
+msgstr ""
+
+#: vendor/yahnis-elsts/plugin-update-checker/Puc/v4p13/Vcs/PluginUpdateChecker.php:100
+msgid "There is no changelog available."
+msgstr ""

@@ -1,0 +1,130 @@
+.customize-control-typography {
+}
+
+.wpshop-customize-label-btn {
+    width: 26px;
+    height: 24px;
+    line-height: 22px;
+    font-size: 14px;
+    padding-top: 1px;
+    text-align: center;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+}
+
+.wpshop-customize-label-btn:hover {
+    background: #fff;
+    color: #3723f2;
+}
+
+.wpshop-customize-label-btn.active {
+    border-bottom: 1px solid #3723f2;
+    background: #fff;
+    color: #3723f2;
+}
+
+.wpshop-customize-label-tools {
+    float: right;
+}
+
+.wpshop-customize-typography-font-family {
+    float: left;
+    width: 57%;
+}
+
+.wpshop-customize-typography-wrap {
+    margin-bottom: 10px;
+}
+
+.wpshop-customize-typography-wrap:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.wpshop-customize-typography-label {
+    display: block;
+    font-size: 0.95em;
+}
+
+.wpshop-customize-typography-font-size {
+    float: left;
+    width: 48%;
+}
+
+.wpshop-customize-typography-font-size input[type=number] {
+    width: calc(100% - 30px);
+    font-size: 12px;
+}
+
+.wpshop-customize-typography-unit {
+    font-size: 12px;
+}
+
+.wpshop-customize-typography-styles {
+    display: flex;
+    float: right;
+    width: 40%;
+}
+
+.wpshop-customize-typography-style-btn {
+    flex: 1 1 0;
+    color: #555;
+    /*border-color: #ccc;*/
+    background: #fff;
+    box-shadow: 0 1px 0 #ccc;
+    vertical-align: top;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 26px;
+    width: 1.6em;
+    height: 28px;
+    margin: 0;
+    padding: 0 0 1px;
+    text-align: center;
+    cursor: pointer;
+    -webkit-appearance: none;
+    white-space: nowrap;
+    box-sizing: border-box;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+.wpshop-customize-typography-style-btn:hover {
+    color: #3723f2;
+}
+
+.wpshop-customize-typography-style-btn.active {
+    background: #e6e6e6;
+    border-color: #999;
+    box-shadow: inset 0 2px 6px -2px rgba(0,0,0,.8);
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+    color: #3723f2;
+}
+
+
+.wpshop-customize-typography-line-height {
+    float: right;
+    width: 48%;
+}
+
+.wpshop-customize-typography-line-height input[type=number] {
+    width: 100%;
+    font-size: 12px;
+}
+
+.wpshop-customize-typography-color {
+    /*float: right;
+    width: 45%;*/
+}
+
+.wpshop-customize-typography-unit {
+    display: inline-block;
+    width: 25px;
+    padding-left: 2px;
+}
