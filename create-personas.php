@@ -53,10 +53,12 @@ foreach ($personas as $p) {
     echo "Processing: {$p['login']}...<br>\n";
     flush();
 
-    // Check if user exists
+    // Check if user exists — update meta if already created
     $existing = get_user_by('login', $p['login']);
     if ($existing) {
-        $results[] = "SKIP: {$p['login']} (already exists, ID={$existing->ID})";
+        update_user_meta($existing->ID, 'is_persona', '1');
+        update_user_meta($existing->ID, 'gender', $p['gender']);
+        $results[] = "META_UPDATED: {$p['login']} (ID={$existing->ID})";
         continue;
     }
 
@@ -88,9 +90,11 @@ foreach ($personas as $p) {
         continue;
     }
 
-    // Set karma
+    // Set karma and persona flags
     update_user_meta($userId, 'karma', $karma);
     update_user_meta($userId, 'karma_history', []);
+    update_user_meta($userId, 'is_persona', '1');
+    update_user_meta($userId, 'gender', $p['gender']);
 
     // Download avatar from thispersondoesnotexist.com
     $avatarFile = $avatarDir . $p['login'] . '.jpg';

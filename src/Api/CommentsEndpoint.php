@@ -56,6 +56,13 @@ class CommentsEndpoint {
             ],
         ] );
 
+        // GET /hubr/v1/personas — list persona users
+        register_rest_route( self::NAMESPACE, '/personas', [
+            'methods'             => 'GET',
+            'callback'            => [ $this, 'handle_personas' ],
+            'permission_callback' => [ $this, 'check_permission' ],
+        ] );
+
         // POST /hubr/v1/posts/{id}/comment — add comment or reply
         register_rest_route( self::NAMESPACE, '/posts/(?P<id>\d+)/comment', [
             'methods'             => 'POST',
@@ -115,6 +122,29 @@ class CommentsEndpoint {
         }
 
         return true;
+    }
+
+    public function handle_personas(): WP_REST_Response {
+        $users = get_users( [
+            'meta_key'   => 'is_persona',
+            'meta_value' => '1',
+        ] );
+
+        $result = [];
+        foreach ( $users as $user ) {
+            $local_avatar = get_user_meta( $user->ID, '_local_avatar', true );
+            $avatar       = is_array( $local_avatar ) ? ( $local_avatar['thumb'] ?? '' ) : '';
+            $result[]     = [
+                'id'           => $user->ID,
+                'login'        => $user->user_login,
+                'display_name' => $user->display_name,
+                'email'        => $user->user_email,
+                'avatar'       => $avatar,
+                'gender'       => get_user_meta( $user->ID, 'gender', true ) ?: 'm',
+            ];
+        }
+
+        return new WP_REST_Response( [ 'personas' => $result ] );
     }
 
     public function handle_list( WP_REST_Request $request ): WP_REST_Response {
