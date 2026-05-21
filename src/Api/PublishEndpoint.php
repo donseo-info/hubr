@@ -16,6 +16,13 @@ class PublishEndpoint {
     }
 
     public function register_routes(): void {
+        // GET /hubr/v1/categories — list all categories
+        register_rest_route( self::NAMESPACE, '/categories', [
+            'methods'             => 'GET',
+            'callback'            => [ $this, 'handle_categories' ],
+            'permission_callback' => [ $this, 'check_permission' ],
+        ] );
+
         register_rest_route( self::NAMESPACE, self::ROUTE, [
             'methods'             => 'POST',
             'callback'            => [ $this, 'handle' ],
@@ -103,6 +110,28 @@ class PublishEndpoint {
                 ],
             ],
         ] );
+    }
+
+    public function handle_categories(): WP_REST_Response {
+        $terms = get_terms( [
+            'taxonomy'   => 'category',
+            'hide_empty' => false,
+            'orderby'    => 'name',
+            'order'      => 'ASC',
+        ] );
+
+        $result = [];
+        foreach ( $terms as $term ) {
+            $result[] = [
+                'id'     => $term->term_id,
+                'name'   => $term->name,
+                'slug'   => $term->slug,
+                'parent' => $term->parent,
+                'count'  => $term->count,
+            ];
+        }
+
+        return new WP_REST_Response( [ 'categories' => $result ] );
     }
 
     public function check_permission( WP_REST_Request $request ): bool|WP_Error {
