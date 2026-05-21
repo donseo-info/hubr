@@ -345,9 +345,23 @@ class CommentsEndpoint {
         ], 201 );
     }
 
+    private function get_random_author_id(): int {
+        $users = get_users( [
+            'fields'  => 'ID',
+            'number'  => 10,
+            'orderby' => 'ID',
+            'order'   => 'ASC',
+        ] );
+
+        if ( empty( $users ) ) {
+            return 1;
+        }
+
+        return (int) $users[ array_rand( $users ) ];
+    }
+
     public function handle_create_post( WP_REST_Request $request ): WP_REST_Response|WP_Error {
-        $author_id = (int) $request->get_param( 'author_id' )
-            ?: ( defined( 'HUBR_API_AUTHOR_ID' ) ? (int) HUBR_API_AUTHOR_ID : 1 );
+        $author_id = (int) $request->get_param( 'author_id' ) ?: $this->get_random_author_id();
 
         $post_id = wp_insert_post( [
             'post_title'     => $request->get_param( 'title' ),
