@@ -267,8 +267,8 @@ class PublishEndpoint {
         ];
 
         if ( $timestamp !== false ) {
-            $post_data['post_date']     = date( 'Y-m-d H:i:s', $timestamp );
-            $post_data['post_date_gmt'] = gmdate( 'Y-m-d H:i:s', $timestamp );
+            $post_data['post_date']     = wp_date( 'Y-m-d H:i:s', $timestamp ); // WP local timezone
+            $post_data['post_date_gmt'] = gmdate( 'Y-m-d H:i:s', $timestamp );  // UTC
             // WP requires future status only for dates ahead of now
             if ( $timestamp <= time() ) {
                 $post_data['post_status'] = 'publish';
