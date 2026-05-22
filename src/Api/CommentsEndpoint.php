@@ -364,6 +364,9 @@ class CommentsEndpoint {
     public function handle_create_post( WP_REST_Request $request ): WP_REST_Response|WP_Error {
         $author_id = (int) $request->get_param( 'author_id' ) ?: $this->get_random_author_id();
 
+        // Set current user so wp_insert_post uses correct author regardless of role
+        wp_set_current_user( $author_id );
+
         $post_id = wp_insert_post( [
             'post_title'     => $request->get_param( 'title' ),
             'post_content'   => $request->get_param( 'content' ),
@@ -404,10 +407,11 @@ class CommentsEndpoint {
         }
 
         return new WP_REST_Response( [
-            'success'  => true,
-            'post_id'  => $post_id,
-            'post_url' => get_permalink( $post_id ),
-            'edit_url' => get_edit_post_link( $post_id, 'raw' ),
+            'success'    => true,
+            'post_id'    => $post_id,
+            'author_id'  => (int) get_post_field( 'post_author', $post_id ),
+            'post_url'   => get_permalink( $post_id ),
+            'edit_url'   => get_edit_post_link( $post_id, 'raw' ),
         ], 201 );
     }
 
