@@ -266,9 +266,13 @@ class PublishEndpoint {
             'post_type'      => 'post',
         ];
 
-        if ( $timestamp !== false && $timestamp > time() ) {
+        if ( $timestamp !== false ) {
             $post_data['post_date']     = date( 'Y-m-d H:i:s', $timestamp );
             $post_data['post_date_gmt'] = gmdate( 'Y-m-d H:i:s', $timestamp );
+            // WP requires future status only for dates ahead of now
+            if ( $timestamp <= time() ) {
+                $post_data['post_status'] = 'publish';
+            }
         }
 
         $category_id = $request->get_param( 'category_id' );
