@@ -510,7 +510,7 @@ class CustomizerHelper {
             'search.show_form'        => 1,
             'search.show_form_mobile' => 1,
 
-            'structure.footer_elements.block_1_content' => '<div class="site-info"><b>' . get_bloginfo( 'name', 'display' ) . '</b></div><!-- .site-info -->',
+            'structure.footer_elements.block_1_content' => '',
         ], static::get_structure_defaults() );
     }
 
