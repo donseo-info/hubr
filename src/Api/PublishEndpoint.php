@@ -238,17 +238,22 @@ class PublishEndpoint {
         $days_delay   = (int) $request->get_param( 'days_delay' );
         $publish_date = trim( $request->get_param( 'publish_date' ) );
 
+        $status    = $request->get_param( 'status' );
+        $timestamp = false;
+
         if ( $days_delay > 0 ) {
             $timestamp = strtotime( "+{$days_delay} days" );
+            $status    = 'future';
         } elseif ( $publish_date ) {
-            $timestamp = strtotime( $publish_date );
-        } else {
-            $timestamp = false;
-        }
-
-        $status = $request->get_param( 'status' );
-        if ( $timestamp !== false && $timestamp > time() ) {
-            $status = 'future';
+            // datetime-local comes without timezone — treat as site local time
+            $tz        = wp_timezone();
+            $dt        = \DateTime::createFromFormat( 'Y-m-d\TH:i', $publish_date, $tz )
+                      ?: \DateTime::createFromFormat( 'Y-m-d H:i:s', $publish_date, $tz )
+                      ?: \DateTime::createFromFormat( 'Y-m-d H:i', $publish_date, $tz );
+            if ( $dt ) {
+                $timestamp = $dt->getTimestamp();
+                $status    = 'future';
+            }
         }
 
         $post_data = [
