@@ -3,6 +3,7 @@
 use WPShop\WPCommunity\Achievements;
 use WPShop\WPCommunity\Actions\Admin\SaveAdOptionsAction;
 use WPShop\WPCommunity\Actions\Admin\SetupAssistantAction;
+use WPShop\WPCommunity\Api\BoostScoreEndpoint;
 use WPShop\WPCommunity\Api\CommentsEndpoint;
 use WPShop\WPCommunity\Api\PublishEndpoint;
 use WPShop\WPCommunity\Actions\AvatarAction;
@@ -153,6 +154,7 @@ add_action( 'wpcommunity/theme/init', function () {
     theme_container()->get( SetupAssistantAction::class )->init();
     theme_container()->get( PublishEndpoint::class )->init();
     theme_container()->get( CommentsEndpoint::class )->init();
+    theme_container()->get( BoostScoreEndpoint::class )->init();
 
     theme_container()->get( MetaboxSeo::class )->init();
     theme_container()->get( CategorySeo::class )->init();
