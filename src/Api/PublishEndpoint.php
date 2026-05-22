@@ -108,6 +108,18 @@ class PublishEndpoint {
                     'type'     => 'string', // JSON array of {base64, filename}
                     'default'  => '',
                 ],
+                'publish_date'     => [
+                    'required' => false,
+                    'type'     => 'string',
+                    'default'  => '',
+                ],
+                'days_delay'       => [
+                    'required'          => false,
+                    'type'              => 'integer',
+                    'sanitize_callback' => 'absint',
+                    'default'           => 0,
+                    'description'       => 'Publish N days from now. Overrides publish_date if > 0.',
+                ],
             ],
         ] );
     }
@@ -217,15 +229,36 @@ class PublishEndpoint {
             }
         }
 
+        $days_delay   = (int) $request->get_param( 'days_delay' );
+        $publish_date = trim( $request->get_param( 'publish_date' ) );
+
+        if ( $days_delay > 0 ) {
+            $timestamp = strtotime( "+{$days_delay} days" );
+        } elseif ( $publish_date ) {
+            $timestamp = strtotime( $publish_date );
+        } else {
+            $timestamp = false;
+        }
+
+        $status = $request->get_param( 'status' );
+        if ( $timestamp !== false && $timestamp > time() ) {
+            $status = 'future';
+        }
+
         $post_data = [
             'post_title'     => $request->get_param( 'title' ),
             'post_content'   => $content,
             'post_excerpt'   => $request->get_param( 'excerpt' ),
-            'post_status'    => $request->get_param( 'status' ),
+            'post_status'    => $status,
             'post_author'    => $author_id,
             'comment_status' => 'open',
             'post_type'      => 'post',
         ];
+
+        if ( $timestamp !== false && $timestamp > time() ) {
+            $post_data['post_date']     = date( 'Y-m-d H:i:s', $timestamp );
+            $post_data['post_date_gmt'] = gmdate( 'Y-m-d H:i:s', $timestamp );
+        }
 
         $category_id = $request->get_param( 'category_id' );
         if ( $category_id ) {
