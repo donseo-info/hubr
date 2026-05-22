@@ -57,6 +57,12 @@ class PublishEndpoint {
                     'sanitize_callback' => 'absint',
                     'default'           => 0,
                 ],
+                'publish_date'     => [
+                    'required'          => false,
+                    'type'              => 'string',
+                    'sanitize_callback' => 'sanitize_text_field',
+                    'default'           => '',
+                ],
                 'tags'             => [
                     'required' => false,
                     'type'     => 'string',
