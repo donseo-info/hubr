@@ -360,19 +360,22 @@ class CommentsEndpoint {
     }
 
     private function get_random_author_id(): int {
-        $users = get_users( [
-            'fields'   => 'ID',
-            'number'   => 10,
-            'orderby'  => 'ID',
-            'order'    => 'ASC',
-            'role__not_in' => [ 'administrator' ],
-        ] );
-
-        if ( empty( $users ) ) {
-            return defined( 'HUBR_API_AUTHOR_ID' ) ? (int) HUBR_API_AUTHOR_ID : 1;
+        // Try common non-admin roles
+        $roles = [ 'subscriber', 'contributor', 'author', 'editor' ];
+        foreach ( $roles as $role ) {
+            $users = get_users( [
+                'fields'  => 'ID',
+                'number'  => 10,
+                'orderby' => 'ID',
+                'order'   => 'ASC',
+                'role'    => $role,
+            ] );
+            if ( ! empty( $users ) ) {
+                return (int) $users[ array_rand( $users ) ];
+            }
         }
 
-        return (int) $users[ array_rand( $users ) ];
+        return defined( 'HUBR_API_AUTHOR_ID' ) ? (int) HUBR_API_AUTHOR_ID : 1;
     }
 
     public function handle_create_post( WP_REST_Request $request ): WP_REST_Response|WP_Error {
@@ -442,11 +445,12 @@ class CommentsEndpoint {
         }
 
         return new WP_REST_Response( [
-            'success'    => true,
-            'post_id'    => $post_id,
-            'author_id'  => (int) get_post_field( 'post_author', $post_id ),
-            'post_url'   => get_permalink( $post_id ),
-            'edit_url'   => get_edit_post_link( $post_id, 'raw' ),
+            'success'      => true,
+            'post_id'      => $post_id,
+            'author_id'    => (int) get_post_field( 'post_author', $post_id ),
+            'author_debug' => $author_id,
+            'post_url'     => get_permalink( $post_id ),
+            'edit_url'     => get_edit_post_link( $post_id, 'raw' ),
         ], 201 );
     }
 
