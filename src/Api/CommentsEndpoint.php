@@ -125,6 +125,20 @@ class CommentsEndpoint {
                     'type'     => 'integer',
                     'default'  => 0,
                 ],
+                'publish_date'   => [
+                    'required'    => false,
+                    'type'        => 'string',
+                    'sanitize_callback' => 'sanitize_text_field',
+                    'default'     => '',
+                    'description' => 'Datetime in format: Y-m-d H:i:s. Future date = scheduled post.',
+                ],
+                'days_delay'     => [
+                    'required'    => false,
+                    'type'        => 'integer',
+                    'default'     => 0,
+                    'minimum'     => 0,
+                    'description' => 'Publish N days from now. Overrides publish_date if > 0.',
+                ],
             ],
         ] );
 
@@ -364,10 +378,7 @@ class CommentsEndpoint {
     public function handle_create_post( WP_REST_Request $request ): WP_REST_Response|WP_Error {
         $author_id = (int) $request->get_param( 'author_id' ) ?: $this->get_random_author_id();
 
-        // Set current user so wp_insert_post uses correct author regardless of role
-        wp_set_current_user( $author_id );
-
-        $post_id = wp_insert_post( [
+        $post_data = [
             'post_title'     => $request->get_param( 'title' ),
             'post_content'   => $request->get_param( 'content' ),
             'post_excerpt'   => $request->get_param( 'excerpt' ),
@@ -375,11 +386,35 @@ class CommentsEndpoint {
             'post_author'    => $author_id,
             'post_type'      => 'post',
             'comment_status' => 'open',
-        ], true );
+        ];
+
+        $days_delay   = (int) $request->get_param( 'days_delay' );
+        $publish_date = trim( $request->get_param( 'publish_date' ) );
+
+        if ( $days_delay > 0 ) {
+            $timestamp = strtotime( "+{$days_delay} days" );
+        } elseif ( $publish_date ) {
+            $timestamp = strtotime( $publish_date );
+        } else {
+            $timestamp = false;
+        }
+
+        if ( $timestamp !== false && $timestamp > time() ) {
+            $post_data['post_date']     = date( 'Y-m-d H:i:s', $timestamp );
+            $post_data['post_date_gmt'] = gmdate( 'Y-m-d H:i:s', $timestamp );
+            $post_data['post_status']   = 'future';
+        }
+
+        $post_id = wp_insert_post( $post_data, true );
 
         if ( is_wp_error( $post_id ) ) {
             return $post_id;
         }
+
+        // Force correct author directly in DB — bypasses WP capability check on post_author
+        global $wpdb;
+        $wpdb->update( $wpdb->posts, [ 'post_author' => $author_id ], [ 'ID' => $post_id ] );
+        clean_post_cache( $post_id );
 
         // Featured image: existing attachment ID takes priority over base64 upload
         $thumbnail_id = (int) $request->get_param( 'thumbnail_id' );
