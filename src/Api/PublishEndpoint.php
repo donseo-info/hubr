@@ -320,12 +320,22 @@ class PublishEndpoint {
             update_post_meta( $post_id, '_hubr_seo_description', $meta_desc );
         }
 
+        $saved = get_post( $post_id );
         return new WP_REST_Response( [
             'success'   => true,
             'post_id'   => $post_id,
             'author_id' => (int) get_post_field( 'post_author', $post_id ),
             'post_url'  => get_the_permalink( $post_id ),
             'edit_url'  => get_edit_post_link( $post_id, 'raw' ),
+            '_debug'    => [
+                'publish_date_in' => $publish_date,
+                'timestamp'       => $timestamp,
+                'time_now'        => time(),
+                'status_set'      => $saved->post_status,
+                'post_date'       => $saved->post_date,
+                'post_date_gmt'   => $saved->post_date_gmt,
+                'wp_timezone'     => wp_timezone_string(),
+            ],
         ], 201 );
     }
 
