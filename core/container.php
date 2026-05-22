@@ -12,6 +12,7 @@ use Wpshop\Settings\MaintenanceInterface;
 use WPShop\WPCommunity\Achievements;
 use WPShop\WPCommunity\Actions\Admin\SaveAdOptionsAction;
 use WPShop\WPCommunity\Actions\Admin\SetupAssistantAction;
+use WPShop\WPCommunity\Api\BoostScoreEndpoint;
 use WPShop\WPCommunity\Api\CommentsEndpoint;
 use WPShop\WPCommunity\Api\PublishEndpoint;
 use WPShop\WPCommunity\Actions\AuthAction;
@@ -432,6 +433,9 @@ return function ( $config ) {
         },
         CommentsEndpoint::class     => function () {
             return new CommentsEndpoint();
+        },
+        BoostScoreEndpoint::class   => function () {
+            return new BoostScoreEndpoint();
         },
 
         MetaboxPostElements::class => function () {
