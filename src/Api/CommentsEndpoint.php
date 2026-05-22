@@ -347,14 +347,15 @@ class CommentsEndpoint {
 
     private function get_random_author_id(): int {
         $users = get_users( [
-            'fields'  => 'ID',
-            'number'  => 10,
-            'orderby' => 'ID',
-            'order'   => 'ASC',
+            'fields'   => 'ID',
+            'number'   => 10,
+            'orderby'  => 'ID',
+            'order'    => 'ASC',
+            'role__not_in' => [ 'administrator' ],
         ] );
 
         if ( empty( $users ) ) {
-            return 1;
+            return defined( 'HUBR_API_AUTHOR_ID' ) ? (int) HUBR_API_AUTHOR_ID : 1;
         }
 
         return (int) $users[ array_rand( $users ) ];
