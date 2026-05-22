@@ -119,15 +119,56 @@ class MetaboxSeo {
         }
 
         $post_id = get_the_ID();
-        $title   = get_post_meta( $post_id, self::META_TITLE, true );
-        $desc    = get_post_meta( $post_id, self::META_DESC, true );
+        $title   = get_post_meta( $post_id, self::META_TITLE, true ) ?: get_the_title( $post_id );
+        $desc    = get_post_meta( $post_id, self::META_DESC, true )  ?: get_the_excerpt( get_post( $post_id ) );
+        $url     = get_permalink( $post_id );
+        $site    = get_bloginfo( 'name' );
 
-        if ( $title ) {
-            echo '<meta name="title" content="' . esc_attr( $title ) . '">' . "\n";
+        // Featured image
+        $image_url = '';
+        if ( has_post_thumbnail( $post_id ) ) {
+            $img = wp_get_attachment_image_src( get_post_thumbnail_id( $post_id ), 'large' );
+            if ( $img ) $image_url = $img[0];
+        }
+        // Fallback: first gallery image
+        if ( ! $image_url ) {
+            $gallery = get_post_meta( $post_id, '_hubr_gallery', true );
+            if ( is_array( $gallery ) ) {
+                foreach ( $gallery as $gid ) {
+                    $f = get_attached_file( $gid );
+                    if ( $f && str_starts_with( basename( $f ), 'generic_' ) ) continue;
+                    $img = wp_get_attachment_image_src( $gid, 'large' );
+                    if ( $img ) { $image_url = $img[0]; break; }
+                }
+            }
         }
 
-        if ( $desc ) {
-            echo '<meta name="description" content="' . esc_attr( $desc ) . '">' . "\n";
+        // Basic meta
+        if ( $title ) echo '<meta name="title" content="'       . esc_attr( $title ) . '">' . "\n";
+        if ( $desc )  echo '<meta name="description" content="' . esc_attr( $desc )  . '">' . "\n";
+
+        // Open Graph
+        echo '<meta property="og:type"        content="article">' . "\n";
+        echo '<meta property="og:site_name"   content="' . esc_attr( $site )  . '">' . "\n";
+        echo '<meta property="og:url"         content="' . esc_url( $url )    . '">' . "\n";
+        echo '<meta property="og:title"       content="' . esc_attr( $title ) . '">' . "\n";
+        echo '<meta property="og:description" content="' . esc_attr( $desc )  . '">' . "\n";
+        if ( $image_url ) {
+            echo '<meta property="og:image"       content="' . esc_url( $image_url ) . '">' . "\n";
+            echo '<meta property="og:image:width"  content="1200">' . "\n";
+            echo '<meta property="og:image:height" content="630">' . "\n";
         }
+
+        // Twitter Cards
+        echo '<meta name="twitter:card"        content="' . ( $image_url ? 'summary_large_image' : 'summary' ) . '">' . "\n";
+        echo '<meta name="twitter:title"       content="' . esc_attr( $title ) . '">' . "\n";
+        echo '<meta name="twitter:description" content="' . esc_attr( $desc )  . '">' . "\n";
+        if ( $image_url ) {
+            echo '<meta name="twitter:image" content="' . esc_url( $image_url ) . '">' . "\n";
+        }
+
+        // Article meta
+        echo '<meta property="article:published_time" content="' . esc_attr( get_the_date( 'c', $post_id ) ) . '">' . "\n";
+        echo '<meta property="article:modified_time"  content="' . esc_attr( get_the_modified_date( 'c', $post_id ) ) . '">' . "\n";
     }
 }
