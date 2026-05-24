@@ -43,7 +43,7 @@ echo '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
     <description><?= esc_html( $site_desc ) ?></description>
     <language>ru</language>
     <atom:link href="<?= esc_url( $feed_url ) ?>" rel="self" type="application/rss+xml"/>
-    <lastBuildDate><?= date_i18n( 'D, d M Y H:i:s O' ) ?></lastBuildDate>
+    <lastBuildDate><?= date( 'D, d M Y H:i:s O' ) ?></lastBuildDate>
 
 <?php while ( $query->have_posts() ) : $query->the_post();
     $post_id   = get_the_ID();
@@ -51,7 +51,7 @@ echo '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
     $desc      = get_post_meta( $post_id, '_hubr_seo_description', true ) ?: get_the_excerpt();
     $content   = get_the_content();
     $permalink = get_permalink();
-    $pub_date  = get_the_date( 'D, d M Y H:i:s O' );
+    $pub_date  = date( 'D, d M Y H:i:s O', get_post_timestamp() );
     $author    = get_the_author();
 
     // Featured image — full size, skip if < 700px (Dzen/VK minimum)
