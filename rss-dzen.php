@@ -8,6 +8,21 @@ defined( 'ABSPATH' ) || exit;
 
 header( 'Content-Type: application/rss+xml; charset=UTF-8' );
 
+// --- Access log -----------------------------------------------------------
+( function () {
+    $log_file = WP_CONTENT_DIR . '/dzen-feed-access.log';
+    $ip       = $_SERVER['HTTP_X_FORWARDED_FOR']
+             ?? $_SERVER['HTTP_X_REAL_IP']
+             ?? $_SERVER['REMOTE_ADDR']
+             ?? '-';
+    // Take only first IP if X-Forwarded-For contains a chain
+    $ip = trim( explode( ',', $ip )[0] );
+    $ua   = $_SERVER['HTTP_USER_AGENT'] ?? '-';
+    $ref  = $_SERVER['HTTP_REFERER']    ?? '-';
+    $line = date( 'Y-m-d H:i:s' ) . "\t" . $ip . "\t" . $ua . "\t" . $ref . "\n";
+    file_put_contents( $log_file, $line, FILE_APPEND | LOCK_EX );
+} )();
+
 $args = [
     'post_type'      => 'post',
     'post_status'    => 'publish',
