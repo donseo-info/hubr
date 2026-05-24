@@ -10,7 +10,7 @@ header( 'Content-Type: application/rss+xml; charset=UTF-8' );
 
 // --- Access log -----------------------------------------------------------
 ( function () {
-    $log_file = WP_CONTENT_DIR . '/dzen-feed-access.log';
+    $log_file = get_template_directory() . '/logs/dzen-feed-access.log';
     $ip       = $_SERVER['HTTP_X_FORWARDED_FOR']
              ?? $_SERVER['HTTP_X_REAL_IP']
              ?? $_SERVER['REMOTE_ADDR']
