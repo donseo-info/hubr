@@ -121,7 +121,7 @@ echo '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
                 // Extract <td> cells only
                 preg_match_all( '/<td[^>]*>(.*?)<\/td>/is', $row_html, $cells );
                 $parts = array_map(
-                    fn( $c ) => trim( wp_strip_all_tags( $c ) ),
+                    fn( $c ) => trim( html_entity_decode( wp_strip_all_tags( $c ), ENT_QUOTES | ENT_HTML5, 'UTF-8' ) ),
                     $cells[1]
                 );
                 $parts = array_filter( $parts, fn( $p ) => $p !== '' );
