@@ -107,19 +107,34 @@ echo '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
             $table_html = $matches[1];
             $items      = [];
 
-            // Collect all rows (thead/tbody/tfoot rows)
             preg_match_all( '/<tr[^>]*>(.*?)<\/tr>/is', $table_html, $rows );
             foreach ( $rows[1] as $row_html ) {
-                // Collect all cells (th or td)
-                preg_match_all( '/<t[hd][^>]*>(.*?)<\/t[hd]>/is', $row_html, $cells );
+                // Check if row is header-only (<th> cells, no <td>)
+                $has_td = (bool) preg_match( '/<td[\s>]/i', $row_html );
+                $has_th = (bool) preg_match( '/<th[\s>]/i', $row_html );
+
+                if ( $has_th && ! $has_td ) {
+                    // Header row — skip (column names add no value in a list)
+                    continue;
+                }
+
+                // Extract <td> cells only
+                preg_match_all( '/<td[^>]*>(.*?)<\/td>/is', $row_html, $cells );
                 $parts = array_map(
                     fn( $c ) => trim( wp_strip_all_tags( $c ) ),
                     $cells[1]
                 );
                 $parts = array_filter( $parts, fn( $p ) => $p !== '' );
-                if ( ! empty( $parts ) ) {
-                    $items[] = '<li>' . esc_html( implode( ' — ', $parts ) ) . '</li>';
+
+                if ( empty( $parts ) ) {
+                    continue;
                 }
+
+                // First cell → bold, rest → plain, joined with " — "
+                $first = '<strong>' . esc_html( array_shift( $parts ) ) . '</strong>';
+                $rest  = array_map( 'esc_html', $parts );
+                $line  = $first . ( $rest ? ' — ' . implode( ' — ', $rest ) : '' );
+                $items[] = '<li>' . $line . '</li>';
             }
 
             if ( empty( $items ) ) {
