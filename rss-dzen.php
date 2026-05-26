@@ -100,6 +100,36 @@ echo '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
     // Full processed content (shortcodes, filters)
     $content = apply_filters( 'the_content', $content );
 
+    // Convert tables → lists for Dzen (tables not supported in RSS)
+    $content = preg_replace_callback(
+        '/<table[^>]*>(.*?)<\/table>/is',
+        function ( $matches ) {
+            $table_html = $matches[1];
+            $items      = [];
+
+            // Collect all rows (thead/tbody/tfoot rows)
+            preg_match_all( '/<tr[^>]*>(.*?)<\/tr>/is', $table_html, $rows );
+            foreach ( $rows[1] as $row_html ) {
+                // Collect all cells (th or td)
+                preg_match_all( '/<t[hd][^>]*>(.*?)<\/t[hd]>/is', $row_html, $cells );
+                $parts = array_map(
+                    fn( $c ) => trim( wp_strip_all_tags( $c ) ),
+                    $cells[1]
+                );
+                $parts = array_filter( $parts, fn( $p ) => $p !== '' );
+                if ( ! empty( $parts ) ) {
+                    $items[] = '<li>' . esc_html( implode( ' — ', $parts ) ) . '</li>';
+                }
+            }
+
+            if ( empty( $items ) ) {
+                return '';
+            }
+            return '<ul>' . implode( "\n", $items ) . '</ul>';
+        },
+        $content
+    );
+
     // Make content absolute URLs
     $content = str_replace( 'href="/', 'href="' . $site_url . '/', $content );
     $content = str_replace( 'src="/', 'src="' . $site_url . '/', $content );
